@@ -5,7 +5,7 @@ import json
 rounds = []
 competitors = {}
 
-league_name = 'american-soldier'
+league_name = 'mazala-q0'
 
 print(f"music league data for {league_name}")
 
