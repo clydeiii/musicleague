@@ -5,7 +5,7 @@ import json
 rounds = []
 competitors = {}
 
-league_name = 'mazala-q0'
+league_name = 'american-solider'
 
 print(f"music league data for {league_name}")
 
@@ -43,11 +43,14 @@ for competitor in competitors.values():
             who_they_voted_for[other_player['name']] = [0, 0]
             for round in rounds:
                 for votes_in_round in competitor['votes'][round]:
-                    if votes_in_round['song'] in other_player['submissions'].values():
-                        who_they_voted_for[other_player['name']][0] += int(votes_in_round['points'])
-                        total_points_assigned += int(votes_in_round['points'])
-                        if(int(votes_in_round['points']) > 0):
-                            who_they_voted_for[other_player['name']][1] += 1
+                    # first determine if this other player even submitted a song this round
+                    if round in other_player['submissions']:
+                        # great they did, so now see if that other player's submission was in this round
+                        if votes_in_round['song'] == other_player['submissions'][round]:
+                            who_they_voted_for[other_player['name']][0] += int(votes_in_round['points'])
+                            total_points_assigned += int(votes_in_round['points'])
+                            if(int(votes_in_round['points']) > 0):
+                                who_they_voted_for[other_player['name']][1] += 1
     sorted_voting_history = sorted(who_they_voted_for.items(), key=lambda item: item[1])
     print(f"{competitor['name']}'s voting history ({total_points_assigned}): {sorted_voting_history}")
 
@@ -64,11 +67,14 @@ for competitor in competitors.values():
 
             for round in rounds:
                 for votes_in_round in possible_fan['votes'][round]:
-                    if votes_in_round['song'] in competitor['submissions'].values():
-                        biggest_fans[possible_fan['name']][0] += int(votes_in_round['points'])
-                        score += int(votes_in_round['points'])
-                        if(int(votes_in_round['points']) > 0):
-                            biggest_fans[possible_fan['name']][1] += 1
+                    #first check if the competitor even submitted a song this round
+                    if round in competitor['submissions']:
+                        # ok great they did submmit, so see if possible fan voted for their selection    
+                        if votes_in_round['song'] == competitor['submissions'][round]:
+                            biggest_fans[possible_fan['name']][0] += int(votes_in_round['points'])
+                            score += int(votes_in_round['points'])
+                            if(int(votes_in_round['points']) > 0):
+                                biggest_fans[possible_fan['name']][1] += 1 # tally how rounds they voted for this person (regardless of points assigned)
 
 
 
