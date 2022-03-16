@@ -22,7 +22,7 @@ with open(f"data/{league_name}/rounds.csv", newline='') as csvfile:
 with open(f"data/{league_name}/competitors.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'chatty_score': 0}
+        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'chatty_score': 0, 'sheep_score': 0}
         for round_id in rounds:
             competitors[row['ID']]['votes'][round_id] = {}
 
@@ -62,6 +62,15 @@ for competitor in competitors.values():
         # did they vote for the last place song?
         if any(round_losers[round] in songs for songs in competitor['votes'][round]):
             taste_fakers[competitor['name']] += competitor['votes'][round][round_losers[round]]
+        # loop through all of the song submisisons this round and award this competitor sheep points for voting with others
+        for submission in submissions_by_round[round]:
+            # did this user vote for this submission?
+            if submission in competitor['votes'][round]:
+                competitor['sheep_score'] += submissions_by_round[round][submission] # all points assigned this round to this submisison
+
+
+for competitor in competitors.values():
+    print(f"{competitor['name']}'s sheep score: {competitor['sheep_score']}")
 
 print("Taste Maker Scores:")
 print(json.dumps(taste_makers, indent = 4))
