@@ -24,7 +24,7 @@ with open(f"data/{league_name}/competitors.csv", newline='') as csvfile:
     for row in reader:
         competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'chatty_score': 0}
         for round_id in rounds:
-            competitors[row['ID']]['votes'][round_id] = []
+            competitors[row['ID']]['votes'][round_id] = {}
 
 with open(f"data/{league_name}/submissions.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
@@ -35,7 +35,7 @@ with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         if int(row['Points Assigned']) > 0: 
-            competitors[row['Voter ID']]['votes'][row['Round ID']].append({row['Spotify URI']: int(row['Points Assigned'])})
+            competitors[row['Voter ID']]['votes'][row['Round ID']][row['Spotify URI']] = int(row['Points Assigned'])
         else: # if they awarded 0 points it means they left a comment but no points, give them chatty points
             competitors[row['Voter ID']]['chatty_score'] += 1
         submissions_by_round[row['Round ID']][row['Spotify URI']] += int(row['Points Assigned'])
@@ -58,10 +58,10 @@ for competitor in competitors.values():
     for round in rounds:
         # did they vote for the first place song?
         if any(round_winners[round] in songs for songs in competitor['votes'][round]):
-            taste_makers[competitor['name']] += 1
+            taste_makers[competitor['name']] += competitor['votes'][round][round_winners[round]] #give them taste maker points equal to the amount of votes they gave the winning song
         # did they vote for the last place song?
         if any(round_losers[round] in songs for songs in competitor['votes'][round]):
-            taste_fakers[competitor['name']] += 1
+            taste_fakers[competitor['name']] += competitor['votes'][round][round_losers[round]]
 
 print("Taste Maker Scores:")
 print(json.dumps(taste_makers, indent = 4))
@@ -82,8 +82,8 @@ for competitor in competitors.values():
                     # first determine if this other player even submitted a song this round
                     if round in other_player['submissions']:
                         # great they did, so now see if that other player's submission was in this round
-                        if any(other_player['submissions'][round] in song for song in votes_in_round):
-                            votes_for_song = int(votes_in_round[other_player['submissions'][round]])
+                        if other_player['submissions'][round] == votes_in_round:
+                            votes_for_song = competitor['votes'][round][votes_in_round]
                             who_they_voted_for[other_player['name']][0] += votes_for_song
                             total_points_assigned += votes_for_song
                             if(votes_for_song > 0):
@@ -106,9 +106,9 @@ for competitor in competitors.values():
                 for votes_in_round in possible_fan['votes'][round]:
                     #first check if the competitor even submitted a song this round
                     if round in competitor['submissions']:
-                        # ok great they did submmit, so see if possible fan voted for their selection    
-                        if any(competitor['submissions'][round] in song for song in votes_in_round):
-                            points_received = int(votes_in_round[competitor['submissions'][round]])
+                        # ok great they did submit, so see if possible fan voted for their selection    
+                        if competitor['submissions'][round] == votes_in_round:
+                            points_received = possible_fan['votes'][round][votes_in_round]
                             biggest_fans[possible_fan['name']][0] += points_received
                             score += points_received
                             if(points_received > 0):

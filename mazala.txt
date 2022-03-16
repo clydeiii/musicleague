@@ -15,28 +15,28 @@ Darla's chatty score: 7
 Jerret Schultz's chatty score: 0
 Taste Maker Scores:
 {
-    "Stefan": 3,
-    "Clyde Wright": 3,
-    "mmazala": 2,
-    "MaryJo Chelmins": 3,
-    "Greg Ogreenc": 5,
-    "mini-aquiel": 4,
-    "Andrew Christopher Enriquez": 2,
-    "Pyre231": 2,
-    "LJ Saxton": 4,
-    "Paul Bradarich": 3,
-    "Patrick Rose": 3,
-    "Zach Davis": 5,
-    "Darla": 2,
-    "Jerret Schultz": 3
+    "Stefan": 4,
+    "Clyde Wright": 12,
+    "mmazala": 3,
+    "MaryJo Chelmins": 8,
+    "Greg Ogreenc": 10,
+    "mini-aquiel": 11,
+    "Andrew Christopher Enriquez": 8,
+    "Pyre231": 3,
+    "LJ Saxton": 10,
+    "Paul Bradarich": 6,
+    "Patrick Rose": 6,
+    "Zach Davis": 11,
+    "Darla": 4,
+    "Jerret Schultz": 5
 }
 Taste Faker Scores:
 {
     "Stefan": 1,
-    "mmazala": 2,
+    "mmazala": 4,
     "mini-aquiel": 1,
     "Patrick Rose": 2,
-    "Darla": 1,
+    "Darla": 2,
     "Jerret Schultz": 1
 }
 Stefan's voting history (50): [('Clyde Wright', [0, 0]), ('Paul Bradarich', [0, 0]), ('Andrew Christopher Enriquez', [1, 1]), ('Patrick Rose', [1, 1]), ('MaryJo Chelmins', [2, 2]), ('Greg Ogreenc', [3, 2]), ('Pyre231', [3, 3]), ('mmazala', [5, 2]), ('LJ Saxton', [5, 3]), ('Jerret Schultz', [5, 4]), ('Darla', [7, 4]), ('mini-aquiel', [9, 4]), ('Zach Davis', [9, 4])]
