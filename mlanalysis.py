@@ -22,7 +22,7 @@ with open(f"data/{league_name}/rounds.csv", newline='') as csvfile:
 with open(f"data/{league_name}/competitors.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}}
+        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'chatty_score': 0}
         for round_id in rounds:
             competitors[row['ID']]['votes'][round_id] = []
 
@@ -34,13 +34,19 @@ with open(f"data/{league_name}/submissions.csv", newline='') as csvfile:
 with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        competitors[row['Voter ID']]['votes'][row['Round ID']].append({row['Spotify URI']: row['Points Assigned']})
+        if int(row['Points Assigned']) > 0: 
+            competitors[row['Voter ID']]['votes'][row['Round ID']].append({row['Spotify URI']: int(row['Points Assigned'])})
+        else: # if they awarded 0 points it means they left a comment but no points, give them chatty points
+            competitors[row['Voter ID']]['chatty_score'] += 1
         submissions_by_round[row['Round ID']][row['Spotify URI']] += int(row['Points Assigned'])
 
 for round in rounds:
     round_winners[round] = max(submissions_by_round[round], key=submissions_by_round[round].get)
     round_losers[round] = min(submissions_by_round[round], key=submissions_by_round[round].get)
 
+
+for competitor in competitors.values():
+    print(f"{competitor['name']}'s chatty score: {competitor['chatty_score']}")
 #print(json.dumps(competitors['43c8053c706643709c37d432b5118001'], indent = 4)) 
 #print(json.dumps(round_winners, indent = 4))
 #quit()
@@ -50,11 +56,10 @@ taste_makers = DefaultDict(int)
 taste_fakers = DefaultDict(int)
 for competitor in competitors.values():
     for round in rounds:
-        print(round_winners[round])
-        print(competitor['votes'][round])
+        # did they vote for the first place song?
         if any(round_winners[round] in songs for songs in competitor['votes'][round]):
             taste_makers[competitor['name']] += 1
-
+        # did they vote for the last place song?
         if any(round_losers[round] in songs for songs in competitor['votes'][round]):
             taste_fakers[competitor['name']] += 1
 
@@ -64,7 +69,7 @@ print("Taste Faker Scores:")
 print(json.dumps(taste_fakers, indent = 4))
 #quit()
 
-# find michelle's 'how many points did i assign to each other player and in how many rounds'
+# find 'how many points did i assign to each other player and in how many rounds'
 for competitor in competitors.values():
     who_they_voted_for = {}
     total_points_assigned = 0

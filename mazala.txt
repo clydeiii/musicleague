@@ -1,4 +1,44 @@
 music league data for mazalaleague_s1
+Stefan's chatty score: 0
+Clyde Wright's chatty score: 29
+mmazala's chatty score: 26
+MaryJo Chelmins's chatty score: 4
+Greg Ogreenc's chatty score: 19
+mini-aquiel's chatty score: 3
+Andrew Christopher Enriquez's chatty score: 12
+Pyre231's chatty score: 5
+LJ Saxton's chatty score: 20
+Paul Bradarich's chatty score: 35
+Patrick Rose's chatty score: 8
+Zach Davis's chatty score: 16
+Darla's chatty score: 7
+Jerret Schultz's chatty score: 0
+Taste Maker Scores:
+{
+    "Stefan": 3,
+    "Clyde Wright": 3,
+    "mmazala": 2,
+    "MaryJo Chelmins": 3,
+    "Greg Ogreenc": 5,
+    "mini-aquiel": 4,
+    "Andrew Christopher Enriquez": 2,
+    "Pyre231": 2,
+    "LJ Saxton": 4,
+    "Paul Bradarich": 3,
+    "Patrick Rose": 3,
+    "Zach Davis": 5,
+    "Darla": 2,
+    "Jerret Schultz": 3
+}
+Taste Faker Scores:
+{
+    "Stefan": 1,
+    "mmazala": 2,
+    "mini-aquiel": 1,
+    "Patrick Rose": 2,
+    "Darla": 1,
+    "Jerret Schultz": 1
+}
 Stefan's voting history (50): [('Clyde Wright', [0, 0]), ('Paul Bradarich', [0, 0]), ('Andrew Christopher Enriquez', [1, 1]), ('Patrick Rose', [1, 1]), ('MaryJo Chelmins', [2, 2]), ('Greg Ogreenc', [3, 2]), ('Pyre231', [3, 3]), ('mmazala', [5, 2]), ('LJ Saxton', [5, 3]), ('Jerret Schultz', [5, 4]), ('Darla', [7, 4]), ('mini-aquiel', [9, 4]), ('Zach Davis', [9, 4])]
 Clyde Wright's voting history (50): [('Stefan', [0, 0]), ('mmazala', [0, 0]), ('Greg Ogreenc', [0, 0]), ('Paul Bradarich', [0, 0]), ('Darla', [0, 0]), ('mini-aquiel', [2, 1]), ('LJ Saxton', [2, 1]), ('Andrew Christopher Enriquez', [5, 1]), ('Zach Davis', [5, 1]), ('Patrick Rose', [7, 2]), ('Jerret Schultz', [7, 2]), ('MaryJo Chelmins', [10, 2]), ('Pyre231', [12, 3])]
 mmazala's voting history (40): [('Jerret Schultz', [0, 0]), ('Zach Davis', [1, 1]), ('Stefan', [2, 1]), ('Greg Ogreenc', [2, 2]), ('Pyre231', [2, 2]), ('Patrick Rose', [2, 2]), ('Clyde Wright', [3, 1]), ('Andrew Christopher Enriquez', [3, 1]), ('mini-aquiel', [3, 2]), ('LJ Saxton', [4, 2]), ('Darla', [5, 3]), ('MaryJo Chelmins', [6, 2]), ('Paul Bradarich', [7, 4])]
