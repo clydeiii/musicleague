@@ -1,6 +1,7 @@
-from collections import defaultdict
+#from collections import defaultdict
 import csv
 import json
+import sys
 from typing import DefaultDict
 
 rounds = []
@@ -10,6 +11,8 @@ round_winners = {}
 round_losers = {}
 
 league_name = 'mazalaleague_s1'
+if len(sys.argv) > 1:
+    league_name = sys.argv[1]
 
 print(f"music league data for {league_name}")
 
@@ -66,7 +69,7 @@ for competitor in competitors.values():
         for submission in submissions_by_round[round]:
             # did this user vote for this submission?
             if submission in competitor['votes'][round]:
-                competitor['sheep_score'] += submissions_by_round[round][submission] # all points assigned this round to this submisison
+                competitor['sheep_score'] += submissions_by_round[round][submission] * competitor['votes'][round][submission] # all points assigned this round to this submisison multiplied by how many points this person gave it
 
 
 for competitor in competitors.values():

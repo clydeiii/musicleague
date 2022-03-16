@@ -1,4 +1,54 @@
 music league data for mazala-q0
+Stefan's chatty score: 0
+Clyde Wright's chatty score: 17
+mmazala's chatty score: 22
+MaryJo Chelmins's chatty score: 6
+Greg Ogreenc's chatty score: 2
+mini-aquiel's chatty score: 0
+Andrew Christopher Enriquez's chatty score: 21
+Pyre231's chatty score: 0
+LJ Saxton's chatty score: 7
+Paul Bradarich's chatty score: 1
+Patrick Rose's chatty score: 4
+Darla's chatty score: 2
+Jerret Schultz's chatty score: 0
+Stefan's sheep score: 568
+Clyde Wright's sheep score: 613
+mmazala's sheep score: 610
+MaryJo Chelmins's sheep score: 596
+Greg Ogreenc's sheep score: 322
+mini-aquiel's sheep score: 359
+Andrew Christopher Enriquez's sheep score: 591
+Pyre231's sheep score: 672
+LJ Saxton's sheep score: 602
+Paul Bradarich's sheep score: 645
+Patrick Rose's sheep score: 571
+Darla's sheep score: 680
+Jerret Schultz's sheep score: 551
+Taste Maker Scores:
+{
+    "Stefan": 6,
+    "Clyde Wright": 18,
+    "mmazala": 6,
+    "MaryJo Chelmins": 6,
+    "Greg Ogreenc": 1,
+    "mini-aquiel": 6,
+    "Andrew Christopher Enriquez": 6,
+    "Pyre231": 6,
+    "LJ Saxton": 6,
+    "Paul Bradarich": 5,
+    "Patrick Rose": 6,
+    "Darla": 14,
+    "Jerret Schultz": 5
+}
+Taste Faker Scores:
+{
+    "Stefan": 2,
+    "Greg Ogreenc": 2,
+    "LJ Saxton": 2,
+    "Patrick Rose": 3,
+    "Jerret Schultz": 1
+}
 Stefan's voting history (50): [('Greg Ogreenc', [1, 1]), ('Andrew Christopher Enriquez', [2, 2]), ('Patrick Rose', [2, 2]), ('mini-aquiel', [3, 2]), ('Pyre231', [3, 2]), ('Clyde Wright', [4, 3]), ('LJ Saxton', [4, 3]), ('Jerret Schultz', [4, 4]), ('mmazala', [5, 3]), ('MaryJo Chelmins', [5, 4]), ('Paul Bradarich', [8, 5]), ('Darla', [9, 5])]
 Clyde Wright's voting history (40): [('Greg Ogreenc', [0, 0]), ('mini-aquiel', [0, 0]), ('Paul Bradarich', [0, 0]), ('mmazala', [1, 1]), ('LJ Saxton', [1, 1]), ('Pyre231', [2, 1]), ('Jerret Schultz', [2, 1]), ('MaryJo Chelmins', [3, 1]), ('Darla', [5, 1]), ('Patrick Rose', [8, 1]), ('Stefan', [8, 3]), ('Andrew Christopher Enriquez', [10, 3])]
 mmazala's voting history (50): [('Greg Ogreenc', [1, 1]), ('Paul Bradarich', [2, 1]), ('Pyre231', [3, 1]), ('Stefan', [3, 2]), ('mini-aquiel', [3, 2]), ('Patrick Rose', [3, 2]), ('MaryJo Chelmins', [4, 2]), ('Clyde Wright', [5, 4]), ('Darla', [5, 4]), ('LJ Saxton', [6, 3]), ('Andrew Christopher Enriquez', [7, 3]), ('Jerret Schultz', [8, 3])]

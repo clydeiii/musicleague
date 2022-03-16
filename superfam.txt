@@ -1,4 +1,53 @@
 music league data for superfam-s1
+Diana McVeigh's chatty score: 14
+Adam Copeland's chatty score: 37
+Clyde Wright's chatty score: 48
+TaliaIsabelle's chatty score: 0
+elgintrout's chatty score: 0
+Barbara Weatherford Wright's chatty score: 3
+DCopes's chatty score: 12
+Billw's chatty score: 0
+Brendan's chatty score: 3
+lisaann268's chatty score: 0
+P. Lucy McVeigh's chatty score: 8
+Katherine Wright Copeland's chatty score: 22
+Diana McVeigh's sheep score: 455
+Adam Copeland's sheep score: 527
+Clyde Wright's sheep score: 478
+TaliaIsabelle's sheep score: 472
+elgintrout's sheep score: 456
+Barbara Weatherford Wright's sheep score: 439
+DCopes's sheep score: 521
+Billw's sheep score: 506
+Brendan's sheep score: 528
+lisaann268's sheep score: 421
+P. Lucy McVeigh's sheep score: 556
+Katherine Wright Copeland's sheep score: 547
+Taste Maker Scores:
+{
+    "Diana McVeigh": 7,
+    "Adam Copeland": 13,
+    "Clyde Wright": 8,
+    "TaliaIsabelle": 11,
+    "elgintrout": 9,
+    "Barbara Weatherford Wright": 4,
+    "DCopes": 13,
+    "Billw": 9,
+    "Brendan": 10,
+    "lisaann268": 6,
+    "P. Lucy McVeigh": 8,
+    "Katherine Wright Copeland": 14
+}
+Taste Faker Scores:
+{
+    "Diana McVeigh": 1,
+    "Clyde Wright": 1,
+    "TaliaIsabelle": 1,
+    "elgintrout": 3,
+    "Barbara Weatherford Wright": 2,
+    "Billw": 2,
+    "lisaann268": 1
+}
 Diana McVeigh's voting history (56): [('Barbara Weatherford Wright', [1, 1]), ('Billw', [2, 2]), ('Katherine Wright Copeland', [2, 2]), ('lisaann268', [3, 3]), ('TaliaIsabelle', [5, 3]), ('Clyde Wright', [5, 4]), ('Adam Copeland', [5, 5]), ('DCopes', [5, 5]), ('P. Lucy McVeigh', [6, 5]), ('Brendan', [10, 8]), ('elgintrout', [12, 7])]
 Adam Copeland's voting history (56): [('Billw', [0, 0]), ('lisaann268', [0, 0]), ('Barbara Weatherford Wright', [1, 1]), ('TaliaIsabelle', [2, 2]), ('elgintrout', [5, 3]), ('P. Lucy McVeigh', [6, 3]), ('Brendan', [7, 4]), ('DCopes', [7, 5]), ('Diana McVeigh', [8, 4]), ('Katherine Wright Copeland', [8, 4]), ('Clyde Wright', [12, 6])]
 Clyde Wright's voting history (56): [('Katherine Wright Copeland', [1, 1]), ('lisaann268', [2, 2]), ('Billw', [3, 2]), ('Brendan', [3, 2]), ('Barbara Weatherford Wright', [4, 2]), ('Adam Copeland', [4, 3]), ('Diana McVeigh', [6, 4]), ('elgintrout', [7, 3]), ('TaliaIsabelle', [7, 5]), ('DCopes', [8, 6]), ('P. Lucy McVeigh', [11, 7])]

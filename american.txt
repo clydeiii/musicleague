@@ -1,40 +1,126 @@
-music league data for mazala-q0
-Stefan's voting history (50): [('Greg Ogreenc', [1, 1]), ('Andrew Christopher Enriquez', [2, 2]), ('Patrick Rose', [2, 2]), ('mini-aquiel', [3, 2]), ('Pyre231', [3, 2]), ('Clyde Wright', [4, 3]), ('LJ Saxton', [4, 3]), ('Jerret Schultz', [4, 4]), ('mmazala', [5, 3]), ('MaryJo Chelmins', [5, 4]), ('Paul Bradarich', [8, 5]), ('Darla', [9, 5])]
-Clyde Wright's voting history (40): [('Greg Ogreenc', [0, 0]), ('mini-aquiel', [0, 0]), ('Paul Bradarich', [0, 0]), ('mmazala', [1, 1]), ('LJ Saxton', [1, 1]), ('Pyre231', [2, 1]), ('Jerret Schultz', [2, 1]), ('MaryJo Chelmins', [3, 1]), ('Darla', [5, 1]), ('Patrick Rose', [8, 1]), ('Stefan', [8, 3]), ('Andrew Christopher Enriquez', [10, 3])]
-mmazala's voting history (50): [('Greg Ogreenc', [1, 1]), ('Paul Bradarich', [2, 1]), ('Pyre231', [3, 1]), ('Stefan', [3, 2]), ('mini-aquiel', [3, 2]), ('Patrick Rose', [3, 2]), ('MaryJo Chelmins', [4, 2]), ('Clyde Wright', [5, 4]), ('Darla', [5, 4]), ('LJ Saxton', [6, 3]), ('Andrew Christopher Enriquez', [7, 3]), ('Jerret Schultz', [8, 3])]
-MaryJo Chelmins's voting history (50): [('Clyde Wright', [1, 1]), ('Patrick Rose', [1, 1]), ('Darla', [2, 2]), ('Jerret Schultz', [3, 1]), ('Paul Bradarich', [3, 3]), ('mmazala', [4, 3]), ('Greg Ogreenc', [4, 3]), ('Pyre231', [4, 3]), ('mini-aquiel', [5, 3]), ('LJ Saxton', [6, 4]), ('Andrew Christopher Enriquez', [7, 4]), ('Stefan', [10, 4])]
-Greg Ogreenc's voting history (30): [('Darla', [0, 0]), ('mmazala', [1, 1]), ('Pyre231', [1, 1]), ('Stefan', [2, 2]), ('Clyde Wright', [2, 2]), ('Andrew Christopher Enriquez', [2, 2]), ('Paul Bradarich', [2, 2]), ('Patrick Rose', [2, 2]), ('mini-aquiel', [3, 2]), ('LJ Saxton', [4, 2]), ('Jerret Schultz', [4, 2]), ('MaryJo Chelmins', [7, 3])]
-mini-aquiel's voting history (30): [('Stefan', [1, 1]), ('MaryJo Chelmins', [1, 1]), ('Greg Ogreenc', [1, 1]), ('Andrew Christopher Enriquez', [1, 1]), ('Jerret Schultz', [1, 1]), ('Clyde Wright', [2, 1]), ('LJ Saxton', [2, 1]), ('Pyre231', [3, 1]), ('Patrick Rose', [3, 2]), ('mmazala', [4, 2]), ('Darla', [4, 2]), ('Paul Bradarich', [7, 2])]
-Andrew Christopher Enriquez's voting history (50): [('Patrick Rose', [0, 0]), ('Pyre231', [2, 1]), ('Greg Ogreenc', [3, 1]), ('Darla', [3, 2]), ('Clyde Wright', [3, 3]), ('Paul Bradarich', [4, 2]), ('Stefan', [4, 3]), ('mmazala', [4, 3]), ('MaryJo Chelmins', [5, 3]), ('mini-aquiel', [5, 3]), ('LJ Saxton', [6, 4]), ('Jerret Schultz', [11, 4])]
-Pyre231's voting history (50): [('Clyde Wright', [1, 1]), ('mini-aquiel', [1, 1]), ('MaryJo Chelmins', [2, 1]), ('mmazala', [3, 1]), ('Greg Ogreenc', [3, 1]), ('Paul Bradarich', [4, 1]), ('Patrick Rose', [4, 2]), ('Darla', [4, 2]), ('Stefan', [5, 2]), ('Jerret Schultz', [7, 3]), ('Andrew Christopher Enriquez', [8, 2]), ('LJ Saxton', [8, 3])]
-LJ Saxton's voting history (50): [('Stefan', [0, 0]), ('Greg Ogreenc', [1, 1]), ('Pyre231', [1, 1]), ('MaryJo Chelmins', [2, 2]), ('mmazala', [3, 2]), ('Clyde Wright', [3, 3]), ('Andrew Christopher Enriquez', [3, 3]), ('Patrick Rose', [5, 3]), ('Darla', [5, 3]), ('mini-aquiel', [6, 2]), ('Jerret Schultz', [8, 4]), ('Paul Bradarich', [13, 4])]
-Paul Bradarich's voting history (50): [('Patrick Rose', [0, 0]), ('Andrew Christopher Enriquez', [2, 1]), ('Greg Ogreenc', [3, 2]), ('Stefan', [3, 3]), ('Clyde Wright', [4, 2]), ('mmazala', [4, 2]), ('MaryJo Chelmins', [4, 2]), ('Jerret Schultz', [4, 2]), ('Darla', [4, 3]), ('mini-aquiel', [6, 3]), ('Pyre231', [7, 3]), ('LJ Saxton', [9, 4])]
-Patrick Rose's voting history (50): [('Greg Ogreenc', [1, 1]), ('Clyde Wright', [2, 2]), ('Pyre231', [3, 2]), ('Paul Bradarich', [3, 3]), ('MaryJo Chelmins', [4, 2]), ('Andrew Christopher Enriquez', [4, 2]), ('LJ Saxton', [5, 2]), ('Jerret Schultz', [5, 3]), ('Stefan', [5, 4]), ('mmazala', [5, 4]), ('Darla', [6, 4]), ('mini-aquiel', [7, 4])]
-Darla's voting history (50): [('Greg Ogreenc', [0, 0]), ('Jerret Schultz', [1, 1]), ('mini-aquiel', [2, 2]), ('LJ Saxton', [2, 2]), ('Pyre231', [3, 2]), ('Patrick Rose', [3, 2]), ('Clyde Wright', [4, 1]), ('Andrew Christopher Enriquez', [4, 3]), ('MaryJo Chelmins', [6, 2]), ('Stefan', [7, 3]), ('mmazala', [7, 3]), ('Paul Bradarich', [11, 4])]
-Jerret Schultz's voting history (50): [('mini-aquiel', [1, 1]), ('Pyre231', [2, 2]), ('Patrick Rose', [2, 2]), ('Stefan', [3, 2]), ('mmazala', [3, 2]), ('Clyde Wright', [3, 3]), ('LJ Saxton', [4, 3]), ('Andrew Christopher Enriquez', [5, 3]), ('Paul Bradarich', [5, 4]), ('Darla', [6, 5]), ('Greg Ogreenc', [8, 3]), ('MaryJo Chelmins', [8, 5])]
-Stefan's voted for history (51): [('LJ Saxton', [0, 0]), ('mini-aquiel', [1, 1]), ('Greg Ogreenc', [2, 2]), ('mmazala', [3, 2]), ('Jerret Schultz', [3, 2]), ('Paul Bradarich', [3, 3]), ('Andrew Christopher Enriquez', [4, 3]), ('Pyre231', [5, 2]), ('Patrick Rose', [5, 4]), ('Darla', [7, 3]), ('Clyde Wright', [8, 3]), ('MaryJo Chelmins', [10, 4])]
-Stefan's biggest fan is ('MaryJo Chelmins', [10, 4]) and their nemesis is ('LJ Saxton', [0, 0])
-Clyde Wright's voted for history (34): [('MaryJo Chelmins', [1, 1]), ('Pyre231', [1, 1]), ('mini-aquiel', [2, 1]), ('Greg Ogreenc', [2, 2]), ('Patrick Rose', [2, 2]), ('Andrew Christopher Enriquez', [3, 3]), ('LJ Saxton', [3, 3]), ('Jerret Schultz', [3, 3]), ('Darla', [4, 1]), ('Paul Bradarich', [4, 2]), ('Stefan', [4, 3]), ('mmazala', [5, 4])]
-Clyde Wright's biggest fan is ('mmazala', [5, 4]) and their nemesis is ('MaryJo Chelmins', [1, 1])
-mmazala's voted for history (44): [('Clyde Wright', [1, 1]), ('Greg Ogreenc', [1, 1]), ('Pyre231', [3, 1]), ('LJ Saxton', [3, 2]), ('Jerret Schultz', [3, 2]), ('mini-aquiel', [4, 2]), ('Paul Bradarich', [4, 2]), ('MaryJo Chelmins', [4, 3]), ('Andrew Christopher Enriquez', [4, 3]), ('Stefan', [5, 3]), ('Patrick Rose', [5, 4]), ('Darla', [7, 3])]
-mmazala's biggest fan is ('Darla', [7, 3]) and their nemesis is ('Clyde Wright', [1, 1])
-MaryJo Chelmins's voted for history (51): [('mini-aquiel', [1, 1]), ('Pyre231', [2, 1]), ('LJ Saxton', [2, 2]), ('Clyde Wright', [3, 1]), ('mmazala', [4, 2]), ('Paul Bradarich', [4, 2]), ('Patrick Rose', [4, 2]), ('Andrew Christopher Enriquez', [5, 3]), ('Stefan', [5, 4]), ('Darla', [6, 2]), ('Greg Ogreenc', [7, 3]), ('Jerret Schultz', [8, 5])]
-MaryJo Chelmins's biggest fan is ('Jerret Schultz', [8, 5]) and their nemesis is ('mini-aquiel', [1, 1])
-Greg Ogreenc's voted for history (26): [('Clyde Wright', [0, 0]), ('Darla', [0, 0]), ('Stefan', [1, 1]), ('mmazala', [1, 1]), ('mini-aquiel', [1, 1]), ('LJ Saxton', [1, 1]), ('Patrick Rose', [1, 1]), ('Andrew Christopher Enriquez', [3, 1]), ('Pyre231', [3, 1]), ('Paul Bradarich', [3, 2]), ('MaryJo Chelmins', [4, 3]), ('Jerret Schultz', [8, 3])]
-Greg Ogreenc's biggest fan is ('Jerret Schultz', [8, 3]) and their nemesis is ('Clyde Wright', [0, 0])
-mini-aquiel's voted for history (42): [('Clyde Wright', [0, 0]), ('Pyre231', [1, 1]), ('Jerret Schultz', [1, 1]), ('Darla', [2, 2]), ('Stefan', [3, 2]), ('mmazala', [3, 2]), ('Greg Ogreenc', [3, 2]), ('MaryJo Chelmins', [5, 3]), ('Andrew Christopher Enriquez', [5, 3]), ('LJ Saxton', [6, 2]), ('Paul Bradarich', [6, 3]), ('Patrick Rose', [7, 4])]
-mini-aquiel's biggest fan is ('Patrick Rose', [7, 4]) and their nemesis is ('Clyde Wright', [0, 0])
-Andrew Christopher Enriquez's voted for history (55): [('mini-aquiel', [1, 1]), ('Paul Bradarich', [2, 1]), ('Stefan', [2, 2]), ('Greg Ogreenc', [2, 2]), ('LJ Saxton', [3, 3]), ('Patrick Rose', [4, 2]), ('Darla', [4, 3]), ('Jerret Schultz', [5, 3]), ('mmazala', [7, 3]), ('MaryJo Chelmins', [7, 4]), ('Pyre231', [8, 2]), ('Clyde Wright', [10, 3])]
-Andrew Christopher Enriquez's biggest fan is ('Clyde Wright', [10, 3]) and their nemesis is ('mini-aquiel', [1, 1])
-Pyre231's voted for history (34): [('Greg Ogreenc', [1, 1]), ('LJ Saxton', [1, 1]), ('Clyde Wright', [2, 1]), ('Andrew Christopher Enriquez', [2, 1]), ('Jerret Schultz', [2, 2]), ('mmazala', [3, 1]), ('mini-aquiel', [3, 1]), ('Stefan', [3, 2]), ('Patrick Rose', [3, 2]), ('Darla', [3, 2]), ('MaryJo Chelmins', [4, 3]), ('Paul Bradarich', [7, 3])]
-Pyre231's biggest fan is ('Paul Bradarich', [7, 3]) and their nemesis is ('Greg Ogreenc', [1, 1])
-LJ Saxton's voted for history (57): [('Clyde Wright', [1, 1]), ('mini-aquiel', [2, 1]), ('Darla', [2, 2]), ('Greg Ogreenc', [4, 2]), ('Stefan', [4, 3]), ('Jerret Schultz', [4, 3]), ('Patrick Rose', [5, 2]), ('mmazala', [6, 3]), ('MaryJo Chelmins', [6, 4]), ('Andrew Christopher Enriquez', [6, 4]), ('Pyre231', [8, 3]), ('Paul Bradarich', [9, 4])]
-LJ Saxton's biggest fan is ('Paul Bradarich', [9, 4]) and their nemesis is ('Clyde Wright', [1, 1])
-Paul Bradarich's voted for history (62): [('Clyde Wright', [0, 0]), ('mmazala', [2, 1]), ('Greg Ogreenc', [2, 2]), ('MaryJo Chelmins', [3, 3]), ('Patrick Rose', [3, 3]), ('Pyre231', [4, 1]), ('Andrew Christopher Enriquez', [4, 2]), ('Jerret Schultz', [5, 4]), ('mini-aquiel', [7, 2]), ('Stefan', [8, 5]), ('Darla', [11, 4]), ('LJ Saxton', [13, 4])]
-Paul Bradarich's biggest fan is ('LJ Saxton', [13, 4]) and their nemesis is ('Clyde Wright', [0, 0])
-Patrick Rose's voted for history (33): [('Andrew Christopher Enriquez', [0, 0]), ('Paul Bradarich', [0, 0]), ('MaryJo Chelmins', [1, 1]), ('Stefan', [2, 2]), ('Greg Ogreenc', [2, 2]), ('Jerret Schultz', [2, 2]), ('mmazala', [3, 2]), ('mini-aquiel', [3, 2]), ('Darla', [3, 2]), ('Pyre231', [4, 2]), ('LJ Saxton', [5, 3]), ('Clyde Wright', [8, 1])]
-Patrick Rose's biggest fan is ('Clyde Wright', [8, 1]) and their nemesis is ('Andrew Christopher Enriquez', [0, 0])
-Darla's voted for history (53): [('Greg Ogreenc', [0, 0]), ('MaryJo Chelmins', [2, 2]), ('Andrew Christopher Enriquez', [3, 2]), ('mini-aquiel', [4, 2]), ('Pyre231', [4, 2]), ('Paul Bradarich', [4, 3]), ('Clyde Wright', [5, 1]), ('LJ Saxton', [5, 3]), ('mmazala', [5, 4]), ('Patrick Rose', [6, 4]), ('Jerret Schultz', [6, 5]), ('Stefan', [9, 5])]
-Darla's biggest fan is ('Stefan', [9, 5]) and their nemesis is ('Greg Ogreenc', [0, 0])
-Jerret Schultz's voted for history (58): [('mini-aquiel', [1, 1]), ('Darla', [1, 1]), ('Clyde Wright', [2, 1]), ('MaryJo Chelmins', [3, 1]), ('Greg Ogreenc', [4, 2]), ('Paul Bradarich', [4, 2]), ('Stefan', [4, 4]), ('Patrick Rose', [5, 3]), ('Pyre231', [7, 3]), ('mmazala', [8, 3]), ('LJ Saxton', [8, 4]), ('Andrew Christopher Enriquez', [11, 4])]
-Jerret Schultz's biggest fan is ('Andrew Christopher Enriquez', [11, 4]) and their nemesis is ('mini-aquiel', [1, 1])
+music league data for american-soldier
+Diana McVeigh's chatty score: 11
+Madeline Brumback's chatty score: 5
+Christian Teague's chatty score: 0
+lostransky's chatty score: 4
+maddytb's chatty score: 0
+willtvrdik's chatty score: 0
+GB's chatty score: 0
+Clyde Wright's chatty score: 72
+Chelle Spencer's chatty score: 0
+Ian Bowling's chatty score: 2
+coreyhewitt1's chatty score: 0
+Michaela's chatty score: 5
+Joey Mazzara's chatty score: 0
+P. Lucy McVeigh's chatty score: 12
+Timothy C. Takach's chatty score: 0
+Aaron McAleavey's chatty score: 0
+Carter Sligh's chatty score: 1
+Claire Galloway Weber's chatty score: 0
+Diana McVeigh's sheep score: 1580
+Madeline Brumback's sheep score: 2048
+Christian Teague's sheep score: 204
+lostransky's sheep score: 1718
+maddytb's sheep score: 96
+willtvrdik's sheep score: 1936
+GB's sheep score: 1496
+Clyde Wright's sheep score: 1857
+Chelle Spencer's sheep score: 134
+Ian Bowling's sheep score: 1924
+coreyhewitt1's sheep score: 891
+Michaela's sheep score: 1770
+Joey Mazzara's sheep score: 1993
+P. Lucy McVeigh's sheep score: 1766
+Timothy C. Takach's sheep score: 1382
+Aaron McAleavey's sheep score: 0
+Carter Sligh's sheep score: 1921
+Claire Galloway Weber's sheep score: 0
+Taste Maker Scores:
+{
+    "Diana McVeigh": 19,
+    "Madeline Brumback": 41,
+    "Christian Teague": 3,
+    "lostransky": 15,
+    "maddytb": 1,
+    "willtvrdik": 30,
+    "GB": 25,
+    "Clyde Wright": 26,
+    "Chelle Spencer": 3,
+    "Ian Bowling": 25,
+    "coreyhewitt1": 8,
+    "Michaela": 23,
+    "Joey Mazzara": 27,
+    "P. Lucy McVeigh": 17,
+    "Timothy C. Takach": 12,
+    "Carter Sligh": 28
+}
+Taste Faker Scores:
+{
+    "Diana McVeigh": 8,
+    "Madeline Brumback": 1,
+    "Christian Teague": 1,
+    "lostransky": 3,
+    "willtvrdik": 4,
+    "GB": 3,
+    "Clyde Wright": 2,
+    "Ian Bowling": 3,
+    "coreyhewitt1": 2,
+    "Michaela": 3,
+    "Joey Mazzara": 1,
+    "P. Lucy McVeigh": 2,
+    "Carter Sligh": 4
+}
+Diana McVeigh's voting history (150): [('maddytb', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Chelle Spencer', [1, 1]), ('Christian Teague', [2, 2]), ('coreyhewitt1', [8, 8]), ('Madeline Brumback', [9, 9]), ('Michaela', [10, 9]), ('GB', [10, 10]), ('willtvrdik', [11, 11]), ('Timothy C. Takach', [12, 9]), ('lostransky', [13, 11]), ('Clyde Wright', [14, 11]), ('P. Lucy McVeigh', [15, 10]), ('Ian Bowling', [15, 11]), ('Carter Sligh', [15, 11]), ('Joey Mazzara', [15, 13])]
+Madeline Brumback's voting history (150): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [3, 1]), ('coreyhewitt1', [4, 1]), ('Joey Mazzara', [4, 2]), ('Timothy C. Takach', [8, 4]), ('Ian Bowling', [8, 5]), ('Clyde Wright', [11, 6]), ('P. Lucy McVeigh', [11, 6]), ('willtvrdik', [12, 4]), ('Diana McVeigh', [14, 6]), ('lostransky', [15, 7]), ('Carter Sligh', [16, 6]), ('GB', [19, 8]), ('Michaela', [25, 8])]
+Christian Teague's voting history (20): [('Madeline Brumback', [0, 0]), ('coreyhewitt1', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('maddytb', [1, 1]), ('willtvrdik', [1, 1]), ('GB', [1, 1]), ('Clyde Wright', [1, 1]), ('Chelle Spencer', [1, 1]), ('Michaela', [1, 1]), ('P. Lucy McVeigh', [1, 1]), ('Timothy C. Takach', [1, 1]), ('Carter Sligh', [1, 1]), ('Diana McVeigh', [2, 1]), ('lostransky', [2, 1]), ('Joey Mazzara', [2, 2]), ('Ian Bowling', [5, 2])]
+lostransky's voting history (160): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('coreyhewitt1', [3, 3]), ('Christian Teague', [4, 1]), ('P. Lucy McVeigh', [7, 4]), ('Timothy C. Takach', [8, 5]), ('willtvrdik', [9, 6]), ('Carter Sligh', [13, 9]), ('Diana McVeigh', [13, 10]), ('Michaela', [14, 9]), ('Madeline Brumback', [15, 10]), ('Clyde Wright', [16, 7]), ('Ian Bowling', [18, 11]), ('Joey Mazzara', [18, 11]), ('GB', [22, 11])]
+maddytb's voting history (10): [('Diana McVeigh', [0, 0]), ('Madeline Brumback', [0, 0]), ('Christian Teague', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Chelle Spencer', [0, 0]), ('coreyhewitt1', [0, 0]), ('P. Lucy McVeigh', [0, 0]), ('Timothy C. Takach', [0, 0]), ('Carter Sligh', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('lostransky', [1, 1]), ('Clyde Wright', [1, 1]), ('Ian Bowling', [1, 1]), ('Michaela', [2, 1]), ('Aaron McAleavey', [2, 1]), ('Joey Mazzara', [3, 1])]
+willtvrdik's voting history (160): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('P. Lucy McVeigh', [4, 2]), ('coreyhewitt1', [7, 3]), ('Joey Mazzara', [11, 7]), ('Carter Sligh', [11, 7]), ('Ian Bowling', [12, 7]), ('Michaela', [12, 7]), ('Timothy C. Takach', [13, 7]), ('Madeline Brumback', [14, 7]), ('GB', [15, 7]), ('Diana McVeigh', [18, 9]), ('Clyde Wright', [20, 7]), ('lostransky', [22, 8])]
+GB's voting history (120): [('Christian Teague', [0, 0]), ('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Joey Mazzara', [4, 3]), ('P. Lucy McVeigh', [5, 3]), ('coreyhewitt1', [6, 4]), ('lostransky', [7, 4]), ('Michaela', [10, 6]), ('Carter Sligh', [11, 4]), ('Clyde Wright', [11, 6]), ('willtvrdik', [12, 6]), ('Diana McVeigh', [13, 6]), ('Timothy C. Takach', [13, 7]), ('Madeline Brumback', [14, 6]), ('Ian Bowling', [14, 6])]
+Clyde Wright's voting history (160): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('coreyhewitt1', [3, 2]), ('Diana McVeigh', [3, 3]), ('Christian Teague', [5, 1]), ('Timothy C. Takach', [8, 7]), ('GB', [9, 5]), ('lostransky', [10, 4]), ('Madeline Brumback', [13, 6]), ('Michaela', [14, 8]), ('willtvrdik', [16, 7]), ('Joey Mazzara', [16, 8]), ('Carter Sligh', [18, 10]), ('Ian Bowling', [22, 8]), ('P. Lucy McVeigh', [23, 9])]
+Chelle Spencer's voting history (10): [('Diana McVeigh', [0, 0]), ('Madeline Brumback', [0, 0]), ('Christian Teague', [0, 0]), ('maddytb', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Clyde Wright', [0, 0]), ('Ian Bowling', [0, 0]), ('coreyhewitt1', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Joey Mazzara', [1, 1]), ('Timothy C. Takach', [1, 1]), ('Carter Sligh', [1, 1]), ('Michaela', [2, 1]), ('P. Lucy McVeigh', [2, 1]), ('lostransky', [3, 1])]
+Ian Bowling's voting history (160): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [2, 1]), ('Aaron McAleavey', [2, 1]), ('coreyhewitt1', [7, 4]), ('willtvrdik', [8, 5]), ('Carter Sligh', [9, 4]), ('GB', [9, 5]), ('Clyde Wright', [9, 6]), ('Madeline Brumback', [10, 7]), ('P. Lucy McVeigh', [14, 7]), ('Timothy C. Takach', [15, 7]), ('Michaela', [16, 8]), ('Diana McVeigh', [17, 10]), ('Joey Mazzara', [19, 12]), ('lostransky', [23, 11])]
+coreyhewitt1's voting history (80): [('Christian Teague', [0, 0]), ('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('P. Lucy McVeigh', [3, 1]), ('Timothy C. Takach', [3, 2]), ('Carter Sligh', [3, 2]), ('willtvrdik', [3, 3]), ('Michaela', [4, 2]), ('Ian Bowling', [6, 3]), ('GB', [8, 2]), ('Diana McVeigh', [8, 4]), ('lostransky', [8, 5]), ('Clyde Wright', [9, 5]), ('Joey Mazzara', [12, 5]), ('Madeline Brumback', [13, 4])]
+Michaela's voting history (150): [('Chelle Spencer', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('maddytb', [1, 1]), ('Aaron McAleavey', [1, 1]), ('coreyhewitt1', [4, 3]), ('GB', [7, 5]), ('Joey Mazzara', [9, 8]), ('willtvrdik', [9, 9]), ('Timothy C. Takach', [11, 8]), ('lostransky', [12, 8]), ('P. Lucy McVeigh', [12, 9]), ('Carter Sligh', [13, 8]), ('Ian Bowling', [13, 9]), ('Diana McVeigh', [16, 9]), ('Madeline Brumback', [20, 11]), ('Clyde Wright', [21, 12])]
+Joey Mazzara's voting history (160): [('Christian Teague', [0, 0]), ('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('GB', [6, 3]), ('Clyde Wright', [8, 3]), ('coreyhewitt1', [8, 4]), ('willtvrdik', [8, 5]), ('Madeline Brumback', [9, 4]), ('Diana McVeigh', [13, 6]), ('Ian Bowling', [14, 5]), ('P. Lucy McVeigh', [15, 6]), ('Timothy C. Takach', [16, 6]), ('Carter Sligh', [20, 8]), ('Michaela', [20, 9]), ('lostransky', [23, 12])]
+P. Lucy McVeigh's voting history (150): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [2, 1]), ('Aaron McAleavey', [3, 1]), ('GB', [3, 3]), ('coreyhewitt1', [5, 3]), ('Madeline Brumback', [7, 5]), ('Michaela', [11, 7]), ('Timothy C. Takach', [11, 7]), ('willtvrdik', [12, 6]), ('Joey Mazzara', [13, 8]), ('lostransky', [14, 7]), ('Ian Bowling', [15, 8]), ('Clyde Wright', [15, 9]), ('Diana McVeigh', [19, 8]), ('Carter Sligh', [20, 12])]
+Timothy C. Takach's voting history (120): [('Christian Teague', [0, 0]), ('Chelle Spencer', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('maddytb', [1, 1]), ('Aaron McAleavey', [1, 1]), ('GB', [3, 3]), ('Joey Mazzara', [6, 3]), ('willtvrdik', [7, 4]), ('P. Lucy McVeigh', [7, 5]), ('lostransky', [7, 6]), ('coreyhewitt1', [9, 7]), ('Michaela', [10, 5]), ('Ian Bowling', [12, 6]), ('Carter Sligh', [13, 6]), ('Clyde Wright', [13, 7]), ('Diana McVeigh', [13, 8]), ('Madeline Brumback', [18, 9])]
+Aaron McAleavey's voting history (0): [('Diana McVeigh', [0, 0]), ('Madeline Brumback', [0, 0]), ('Christian Teague', [0, 0]), ('lostransky', [0, 0]), ('maddytb', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Clyde Wright', [0, 0]), ('Chelle Spencer', [0, 0]), ('Ian Bowling', [0, 0]), ('coreyhewitt1', [0, 0]), ('Michaela', [0, 0]), ('Joey Mazzara', [0, 0]), ('P. Lucy McVeigh', [0, 0]), ('Timothy C. Takach', [0, 0]), ('Carter Sligh', [0, 0]), ('Claire Galloway Weber', [0, 0])]
+Carter Sligh's voting history (150): [('Christian Teague', [0, 0]), ('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('willtvrdik', [1, 1]), ('Clyde Wright', [2, 1]), ('GB', [10, 5]), ('coreyhewitt1', [10, 5]), ('Timothy C. Takach', [11, 4]), ('Joey Mazzara', [12, 5]), ('P. Lucy McVeigh', [13, 6]), ('Michaela', [14, 6]), ('Madeline Brumback', [15, 5]), ('Diana McVeigh', [17, 7]), ('Ian Bowling', [22, 7]), ('lostransky', [23, 7])]
+Claire Galloway Weber's voting history (0): [('Diana McVeigh', [0, 0]), ('Madeline Brumback', [0, 0]), ('Christian Teague', [0, 0]), ('lostransky', [0, 0]), ('maddytb', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Clyde Wright', [0, 0]), ('Chelle Spencer', [0, 0]), ('Ian Bowling', [0, 0]), ('coreyhewitt1', [0, 0]), ('Michaela', [0, 0]), ('Joey Mazzara', [0, 0]), ('P. Lucy McVeigh', [0, 0]), ('Timothy C. Takach', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Carter Sligh', [0, 0])]
+Diana McVeigh's voted for history (166): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [2, 1]), ('Clyde Wright', [3, 3]), ('coreyhewitt1', [8, 4]), ('GB', [13, 6]), ('Joey Mazzara', [13, 6]), ('Timothy C. Takach', [13, 8]), ('lostransky', [13, 10]), ('Madeline Brumback', [14, 6]), ('Michaela', [16, 9]), ('Carter Sligh', [17, 7]), ('Ian Bowling', [17, 10]), ('willtvrdik', [18, 9]), ('P. Lucy McVeigh', [19, 8])]
+Diana McVeigh's biggest fan is ('P. Lucy McVeigh', [19, 8]) and their nemesis is ('maddytb', [0, 0])
+Madeline Brumback's voted for history (157): [('Christian Teague', [0, 0]), ('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('P. Lucy McVeigh', [7, 5]), ('Joey Mazzara', [9, 4]), ('Diana McVeigh', [9, 9]), ('Ian Bowling', [10, 7]), ('coreyhewitt1', [13, 4]), ('Clyde Wright', [13, 6]), ('GB', [14, 6]), ('willtvrdik', [14, 7]), ('Carter Sligh', [15, 5]), ('lostransky', [15, 10]), ('Timothy C. Takach', [18, 9]), ('Michaela', [20, 11])]
+Madeline Brumback's biggest fan is ('Michaela', [20, 11]) and their nemesis is ('Christian Teague', [0, 0])
+Christian Teague's voted for history (20): [('maddytb', [0, 0]), ('GB', [0, 0]), ('Chelle Spencer', [0, 0]), ('coreyhewitt1', [0, 0]), ('Joey Mazzara', [0, 0]), ('Timothy C. Takach', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Carter Sligh', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('willtvrdik', [1, 1]), ('Michaela', [1, 1]), ('Ian Bowling', [2, 1]), ('P. Lucy McVeigh', [2, 1]), ('Diana McVeigh', [2, 2]), ('Madeline Brumback', [3, 1]), ('lostransky', [4, 1]), ('Clyde Wright', [5, 1])]
+Christian Teague's biggest fan is ('Clyde Wright', [5, 1]) and their nemesis is ('maddytb', [0, 0])
+lostransky's voted for history (183): [('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('maddytb', [1, 1]), ('Christian Teague', [2, 1]), ('Chelle Spencer', [3, 1]), ('GB', [7, 4]), ('Timothy C. Takach', [7, 6]), ('coreyhewitt1', [8, 5]), ('Clyde Wright', [10, 4]), ('Michaela', [12, 8]), ('Diana McVeigh', [13, 11]), ('P. Lucy McVeigh', [14, 7]), ('Madeline Brumback', [15, 7]), ('willtvrdik', [22, 8]), ('Carter Sligh', [23, 7]), ('Ian Bowling', [23, 11]), ('Joey Mazzara', [23, 12])]
+lostransky's biggest fan is ('Joey Mazzara', [23, 12]) and their nemesis is ('Aaron McAleavey', [0, 0])
+maddytb's voted for history (3): [('Diana McVeigh', [0, 0]), ('Madeline Brumback', [0, 0]), ('lostransky', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Clyde Wright', [0, 0]), ('Chelle Spencer', [0, 0]), ('Ian Bowling', [0, 0]), ('coreyhewitt1', [0, 0]), ('Joey Mazzara', [0, 0]), ('P. Lucy McVeigh', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Carter Sligh', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('Michaela', [1, 1]), ('Timothy C. Takach', [1, 1])]
+maddytb's biggest fan is ('Timothy C. Takach', [1, 1]) and their nemesis is ('Diana McVeigh', [0, 0])
+willtvrdik's voted for history (109): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('Carter Sligh', [1, 1]), ('coreyhewitt1', [3, 3]), ('Timothy C. Takach', [7, 4]), ('Ian Bowling', [8, 5]), ('Joey Mazzara', [8, 5]), ('lostransky', [9, 6]), ('Michaela', [9, 9]), ('Diana McVeigh', [11, 11]), ('Madeline Brumback', [12, 4]), ('GB', [12, 6]), ('P. Lucy McVeigh', [12, 6]), ('Clyde Wright', [16, 7])]
+willtvrdik's biggest fan is ('Clyde Wright', [16, 7]) and their nemesis is ('maddytb', [0, 0])
+GB's voted for history (122): [('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('P. Lucy McVeigh', [3, 3]), ('Timothy C. Takach', [3, 3]), ('Joey Mazzara', [6, 3]), ('Michaela', [7, 5]), ('coreyhewitt1', [8, 2]), ('Clyde Wright', [9, 5]), ('Ian Bowling', [9, 5]), ('Carter Sligh', [10, 5]), ('Diana McVeigh', [10, 10]), ('willtvrdik', [15, 7]), ('Madeline Brumback', [19, 8]), ('lostransky', [22, 11])]
+GB's biggest fan is ('lostransky', [22, 11]) and their nemesis is ('maddytb', [0, 0])
+Clyde Wright's voted for history (151): [('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('maddytb', [1, 1]), ('Carter Sligh', [2, 1]), ('Joey Mazzara', [8, 3]), ('coreyhewitt1', [9, 5]), ('Ian Bowling', [9, 6]), ('Madeline Brumback', [11, 6]), ('GB', [11, 6]), ('Timothy C. Takach', [13, 7]), ('Diana McVeigh', [14, 11]), ('P. Lucy McVeigh', [15, 9]), ('lostransky', [16, 7]), ('willtvrdik', [20, 7]), ('Michaela', [21, 12])]
+Clyde Wright's biggest fan is ('Michaela', [21, 12]) and their nemesis is ('Chelle Spencer', [0, 0])
+Chelle Spencer's voted for history (2): [('Madeline Brumback', [0, 0]), ('lostransky', [0, 0]), ('maddytb', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Clyde Wright', [0, 0]), ('Ian Bowling', [0, 0]), ('coreyhewitt1', [0, 0]), ('Michaela', [0, 0]), ('Joey Mazzara', [0, 0]), ('P. Lucy McVeigh', [0, 0]), ('Timothy C. Takach', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Carter Sligh', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Diana McVeigh', [1, 1]), ('Christian Teague', [1, 1])]
+Chelle Spencer's biggest fan is ('Christian Teague', [1, 1]) and their nemesis is ('Madeline Brumback', [0, 0])
+Ian Bowling's voted for history (177): [('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('maddytb', [1, 1]), ('Christian Teague', [5, 2]), ('coreyhewitt1', [6, 3]), ('Madeline Brumback', [8, 5]), ('Timothy C. Takach', [12, 6]), ('willtvrdik', [12, 7]), ('Michaela', [13, 9]), ('Joey Mazzara', [14, 5]), ('GB', [14, 6]), ('P. Lucy McVeigh', [15, 8]), ('Diana McVeigh', [15, 11]), ('lostransky', [18, 11]), ('Carter Sligh', [22, 7]), ('Clyde Wright', [22, 8])]
+Ian Bowling's biggest fan is ('Clyde Wright', [22, 8]) and their nemesis is ('Chelle Spencer', [0, 0])
+coreyhewitt1's voted for history (74): [('Christian Teague', [0, 0]), ('maddytb', [0, 0]), ('Chelle Spencer', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Clyde Wright', [3, 2]), ('lostransky', [3, 3]), ('Madeline Brumback', [4, 1]), ('Michaela', [4, 3]), ('P. Lucy McVeigh', [5, 3]), ('GB', [6, 4]), ('willtvrdik', [7, 3]), ('Ian Bowling', [7, 4]), ('Joey Mazzara', [8, 4]), ('Diana McVeigh', [8, 8]), ('Timothy C. Takach', [9, 7]), ('Carter Sligh', [10, 5])]
+coreyhewitt1's biggest fan is ('Carter Sligh', [10, 5]) and their nemesis is ('Christian Teague', [0, 0])
+Michaela's voted for history (165): [('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('maddytb', [2, 1]), ('Chelle Spencer', [2, 1]), ('coreyhewitt1', [4, 2]), ('Timothy C. Takach', [10, 5]), ('GB', [10, 6]), ('Diana McVeigh', [10, 9]), ('P. Lucy McVeigh', [11, 7]), ('willtvrdik', [12, 7]), ('Carter Sligh', [14, 6]), ('Clyde Wright', [14, 8]), ('lostransky', [14, 9]), ('Ian Bowling', [16, 8]), ('Joey Mazzara', [20, 9]), ('Madeline Brumback', [25, 8])]
+Michaela's biggest fan is ('Madeline Brumback', [25, 8]) and their nemesis is ('Aaron McAleavey', [0, 0])
+Joey Mazzara's voted for history (145): [('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Chelle Spencer', [1, 1]), ('Christian Teague', [2, 2]), ('maddytb', [3, 1]), ('Madeline Brumback', [4, 2]), ('GB', [4, 3]), ('Timothy C. Takach', [6, 3]), ('Michaela', [9, 8]), ('willtvrdik', [11, 7]), ('coreyhewitt1', [12, 5]), ('Carter Sligh', [12, 5]), ('P. Lucy McVeigh', [13, 8]), ('Diana McVeigh', [15, 13]), ('Clyde Wright', [16, 8]), ('lostransky', [18, 11]), ('Ian Bowling', [19, 12])]
+Joey Mazzara's biggest fan is ('Ian Bowling', [19, 12]) and their nemesis is ('Aaron McAleavey', [0, 0])
+P. Lucy McVeigh's voted for history (132): [('maddytb', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('Chelle Spencer', [2, 1]), ('coreyhewitt1', [3, 1]), ('willtvrdik', [4, 2]), ('GB', [5, 3]), ('lostransky', [7, 4]), ('Timothy C. Takach', [7, 5]), ('Madeline Brumback', [11, 6]), ('Michaela', [12, 9]), ('Carter Sligh', [13, 6]), ('Ian Bowling', [14, 7]), ('Joey Mazzara', [15, 6]), ('Diana McVeigh', [15, 10]), ('Clyde Wright', [23, 9])]
+P. Lucy McVeigh's biggest fan is ('Clyde Wright', [23, 9]) and their nemesis is ('maddytb', [0, 0])
+Timothy C. Takach's voted for history (131): [('maddytb', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('Chelle Spencer', [1, 1]), ('coreyhewitt1', [3, 2]), ('Madeline Brumback', [8, 4]), ('lostransky', [8, 5]), ('Clyde Wright', [8, 7]), ('Carter Sligh', [11, 4]), ('P. Lucy McVeigh', [11, 7]), ('Michaela', [11, 8]), ('Diana McVeigh', [12, 9]), ('willtvrdik', [13, 7]), ('GB', [13, 7]), ('Ian Bowling', [15, 7]), ('Joey Mazzara', [16, 6])]
+Timothy C. Takach's biggest fan is ('Joey Mazzara', [16, 6]) and their nemesis is ('maddytb', [0, 0])
+Aaron McAleavey's voted for history (9): [('Diana McVeigh', [0, 0]), ('Madeline Brumback', [0, 0]), ('Christian Teague', [0, 0]), ('lostransky', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Clyde Wright', [0, 0]), ('Chelle Spencer', [0, 0]), ('coreyhewitt1', [0, 0]), ('Joey Mazzara', [0, 0]), ('Carter Sligh', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Michaela', [1, 1]), ('Timothy C. Takach', [1, 1]), ('maddytb', [2, 1]), ('Ian Bowling', [2, 1]), ('P. Lucy McVeigh', [3, 1])]
+Aaron McAleavey's biggest fan is ('P. Lucy McVeigh', [3, 1]) and their nemesis is ('Diana McVeigh', [0, 0])
+Carter Sligh's voted for history (164): [('maddytb', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Claire Galloway Weber', [0, 0]), ('Christian Teague', [1, 1]), ('Chelle Spencer', [1, 1]), ('coreyhewitt1', [3, 2]), ('Ian Bowling', [9, 4]), ('GB', [11, 4]), ('willtvrdik', [11, 7]), ('Timothy C. Takach', [13, 6]), ('Michaela', [13, 8]), ('lostransky', [13, 9]), ('Diana McVeigh', [15, 11]), ('Madeline Brumback', [16, 6]), ('Clyde Wright', [18, 10]), ('Joey Mazzara', [20, 8]), ('P. Lucy McVeigh', [20, 12])]
+Carter Sligh's biggest fan is ('P. Lucy McVeigh', [20, 12]) and their nemesis is ('maddytb', [0, 0])
+Claire Galloway Weber's voted for history (0): [('Diana McVeigh', [0, 0]), ('Madeline Brumback', [0, 0]), ('Christian Teague', [0, 0]), ('lostransky', [0, 0]), ('maddytb', [0, 0]), ('willtvrdik', [0, 0]), ('GB', [0, 0]), ('Clyde Wright', [0, 0]), ('Chelle Spencer', [0, 0]), ('Ian Bowling', [0, 0]), ('coreyhewitt1', [0, 0]), ('Michaela', [0, 0]), ('Joey Mazzara', [0, 0]), ('P. Lucy McVeigh', [0, 0]), ('Timothy C. Takach', [0, 0]), ('Aaron McAleavey', [0, 0]), ('Carter Sligh', [0, 0])]
+Claire Galloway Weber's biggest fan is ('Carter Sligh', [0, 0]) and their nemesis is ('Diana McVeigh', [0, 0])

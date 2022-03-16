@@ -13,20 +13,20 @@ Patrick Rose's chatty score: 8
 Zach Davis's chatty score: 16
 Darla's chatty score: 7
 Jerret Schultz's chatty score: 0
-Stefan's sheep score: 349
-Clyde Wright's sheep score: 194
-mmazala's sheep score: 223
-MaryJo Chelmins's sheep score: 276
-Greg Ogreenc's sheep score: 355
-mini-aquiel's sheep score: 325
-Andrew Christopher Enriquez's sheep score: 210
-Pyre231's sheep score: 286
-LJ Saxton's sheep score: 308
-Paul Bradarich's sheep score: 330
-Patrick Rose's sheep score: 288
-Zach Davis's sheep score: 332
-Darla's sheep score: 210
-Jerret Schultz's sheep score: 393
+Stefan's sheep score: 588
+Clyde Wright's sheep score: 745
+mmazala's sheep score: 388
+MaryJo Chelmins's sheep score: 557
+Greg Ogreenc's sheep score: 683
+mini-aquiel's sheep score: 638
+Andrew Christopher Enriquez's sheep score: 439
+Pyre231's sheep score: 564
+LJ Saxton's sheep score: 668
+Paul Bradarich's sheep score: 582
+Patrick Rose's sheep score: 586
+Zach Davis's sheep score: 673
+Darla's sheep score: 482
+Jerret Schultz's sheep score: 557
 Taste Maker Scores:
 {
     "Stefan": 4,
