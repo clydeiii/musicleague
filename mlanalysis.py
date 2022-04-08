@@ -10,7 +10,7 @@ submissions_by_round = {}
 round_winners = {}
 round_losers = {}
 
-league_name = 'mazalaleague_s1'
+league_name = 'mazala-q2'
 if len(sys.argv) > 1:
     league_name = sys.argv[1]
 
