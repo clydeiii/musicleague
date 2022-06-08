@@ -1,6 +1,4 @@
-#from collections import defaultdict
 import csv
-import json
 import sys
 from typing import DefaultDict
 
@@ -42,8 +40,10 @@ with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
             competitors[row['Voter ID']]['picky_score'] += 1 # award them a picky point for voting for a song
         else: 
             competitors[row['Voter ID']]['chatty_score'] += 1 # if they awarded 0 points it means they left a comment but no points, give them chatty points
+        # award points to this submission for this particular round
         submissions_by_round[row['Round ID']][row['Spotify URI']] += int(row['Points Assigned'])
 
+# use the number of points assigned to each submission for each round to determine the winner and loser (ignore ties)
 for round in rounds:
     round_winners[round] = max(submissions_by_round[round], key=submissions_by_round[round].get)
     round_losers[round] = min(submissions_by_round[round], key=submissions_by_round[round].get)
@@ -57,7 +57,7 @@ for competitor in competitors.values():
     print(f"{competitor['name']}'s picky score: {competitor['picky_score']}")
 
 
-# get taste maker and taste faker (who most often voted for the "worst" song)
+# get taste maker and taste faker (who most often voted for the "best" and "worst" songs)
 for competitor in competitors.values():
     for round in rounds:
         # did they vote for the first place song?
@@ -70,7 +70,9 @@ for competitor in competitors.values():
         for submission in submissions_by_round[round]:
             # did this user vote for this submission?
             if submission in competitor['votes'][round]:
-                competitor['sheep_score'] += submissions_by_round[round][submission] * competitor['votes'][round][submission] # all points assigned this round to this submisison multiplied by how many points this person gave it
+                # sheep score = all points given this round to this submisison multiplied by how many points this person gave it
+                # example: a song is awarded 20 points this round and this user gave it 5, therefore it adds 100 to their sheep score
+                competitor['sheep_score'] += submissions_by_round[round][submission] * competitor['votes'][round][submission] 
 
 print("\nsheep score is how often you voted with the herd")
 for competitor in competitors.values():
@@ -84,12 +86,10 @@ for competitor in competitors.values():
 print("\nTaste Maker Scores (who most often voted for the best song):")
 for competitor in competitors.values():
     print(f"{competitor['name']}'s TasteMaker score: {competitor['taste_maker']}")
-#print(json.dumps(taste_makers, indent = 4))
 print("\nTaste Faker Scores (who most often voted for the worst song):")
 for competitor in competitors.values():
     print(f"{competitor['name']}'s taste faker: {competitor['taste_faker']}")
-#print(json.dumps(taste_fakers, indent = 4))
-#quit()
+
 
 # find 'how many points did i assign to each other player and in how many rounds'
 for competitor in competitors.values():
@@ -140,9 +140,4 @@ for competitor in competitors.values():
     #print(f"{competitor['name']}'s voted for history ({score}): {sorted_voting_history}")
     print(f"{competitor['name']}'s biggest fan is {sorted_voting_history[len(sorted_voting_history)-1]} and their nemesis is {sorted_voting_history[0]}")
 
-
-#print(rounds) 
-
-
-#print(competitors['43c8053c706643709c37d432b5118001'])
 
