@@ -1,5 +1,5 @@
 # musicleague
-python scripts for Music League analysis
+python scripts for Music League analysis for the website https://musicleague.com/
 
 this script calculates the following scores:
 
