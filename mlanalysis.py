@@ -5,6 +5,7 @@ from typing import DefaultDict
 rounds = []
 competitors = {}
 submissions_by_round = {}
+subissions_by_users = {}
 round_winners = {}
 round_losers = {}
 
