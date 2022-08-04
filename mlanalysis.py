@@ -1,15 +1,30 @@
 import csv
 import sys
 from typing import DefaultDict
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
+#tids = ["spotify:track:0fajMX89sy4Z2fGq2GxxHq", "spotify:track:0paMRnR0hqdz8nmInYZrbM"]
+
+# init the spotipy client auth and api
+client_credentials_manager = SpotifyClientCredentials()
+sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+
+#results = sp.tracks(tids)
+#for track in results['tracks']:
+#    print(track['name'] + ' - ' + track['artists'][0]['name'] + ' - ' + str(track['popularity']))
+    #print(track)
+#exit()
 
 rounds = []
 competitors = {}
 submissions_by_round = {}
 subissions_by_users = {}
+popularity_of_songs = {}
 round_winners = {}
 round_losers = {}
 
-league_name = 'mazala-q3'
+league_name = 'mazala-q4'
 if len(sys.argv) > 1:
     league_name = sys.argv[1]
 
@@ -24,7 +39,7 @@ with open(f"data/{league_name}/rounds.csv", newline='') as csvfile:
 with open(f"data/{league_name}/competitors.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'chatty_score': 0, 'sheep_score': 0, 'picky_score': 0, 'taste_maker': 0, 'taste_faker': 0}
+        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'votes_for_popular_score': 0, 'popularity_score': 0, 'chatty_score': 0, 'sheep_score': 0, 'picky_score': 0, 'taste_maker': 0, 'taste_faker': 0}
         for round_id in rounds:
             competitors[row['ID']]['votes'][round_id] = {}
 
@@ -32,6 +47,12 @@ with open(f"data/{league_name}/submissions.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         competitors[row['Submitter ID']]['submissions'][row['Round ID']] = row['Spotify URI']
+        popularity_of_songs[row['Spotify URI']] = sp.track(row['Spotify URI'])['popularity']
+        competitors[row['Submitter ID']]['popularity_score'] += popularity_of_songs[row['Spotify URI']]
+
+#for competitor in competitors.values():
+#    competitor[]
+
 
 with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
@@ -39,6 +60,7 @@ with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
         if int(row['Points Assigned']) > 0: 
             competitors[row['Voter ID']]['votes'][row['Round ID']][row['Spotify URI']] = int(row['Points Assigned'])
             competitors[row['Voter ID']]['picky_score'] += 1 # award them a picky point for voting for a song
+            competitors[row['Voter ID']]['votes_for_popular_score'] += int(row['Points Assigned']) * popularity_of_songs[row['Spotify URI']]
         else: 
             competitors[row['Voter ID']]['chatty_score'] += 1 # if they awarded 0 points it means they left a comment but no points, give them chatty points
         # award points to this submission for this particular round
@@ -49,6 +71,10 @@ for round in rounds:
     round_winners[round] = max(submissions_by_round[round], key=submissions_by_round[round].get)
     round_losers[round] = min(submissions_by_round[round], key=submissions_by_round[round].get)
 
+print("\npopularity score is the sum of the popularity score of all songs you submitted during the league")
+for competitor in competitors.values():
+    print(f"{competitor['name']}'s popularity score: {competitor['popularity_score']}")
+
 print("\nchatty score is the number of times you left a comment on a song you awarded zero points to")
 for competitor in competitors.values():
     print(f"{competitor['name']}'s chatty score: {competitor['chatty_score']}")
@@ -57,6 +83,9 @@ print("\npicky score is the number of times you awarded a song any number of poi
 for competitor in competitors.values():
     print(f"{competitor['name']}'s picky score: {competitor['picky_score']}")
 
+print("\nvotes for popular score multiplies the number of votes you assigned each song by that song's popularity")
+for competitor in competitors.values():
+    print(f"{competitor['name']}'s votes for popular score: {competitor['votes_for_popular_score']}")
 
 # get taste maker and taste faker (who most often voted for the "best" and "worst" songs)
 for competitor in competitors.values():
