@@ -30,7 +30,7 @@ avg_popularity_of_songs_by_round = {}
 number_of_songs_by_round = {}
 total_songs = 0
 
-league_name = 'mazala-q4'
+league_name = 'superfam-s2'
 if len(sys.argv) > 1:
     league_name = sys.argv[1]
 
@@ -84,6 +84,17 @@ with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
             competitors[row['Voter ID']]['chatty_score'] += 1 # if they awarded 0 points it means they left a comment but no points, give them chatty points
         # award points to this submission for this particular round
         points_for_submissions_by_round[row['Round ID']][row['Spotify URI']] += int(row['Points Assigned'])
+
+# delete these people to not mess up biggest fan and nemesis stats
+delete_list = ['8ef3d2c35b114941969315ba76a51745', 
+               'b1d3b6bb237f476daab860bce327dbd6', 
+               'b8d063fd08294c4e990c23ad828fc413', 
+               '20d3fed7908d4a998ec0cdedcee223a8',
+               '8810a6d0056e402a92e777f8a26004a2',
+               'cdde7d539f9e427b906619364c00b037']
+for item in delete_list:
+    if item in competitors:
+        del competitors[item]
 
 # calculate average popularity of submissions and votes for songs
 for competitor in competitors.values():
@@ -170,11 +181,6 @@ for competitor in competitors.values():
 print("\nTaste Faker Scores (who most often voted for the worst song):")
 for competitor in competitors.values():
     print(f"{competitor['name']}'s taste faker: {competitor['taste_faker']}")
-
-# delete these people to not mess up biggest fan and nemesis stats
-delete_list = ['8ef3d2c35b114941969315ba76a51745', 'b1d3b6bb237f476daab860bce327dbd6', 'b8d063fd08294c4e990c23ad828fc413']
-for item in delete_list:
-    del competitors[item]
 
 # find 'how many points did i assign to each other player and in how many rounds'
 for competitor in competitors.values():
