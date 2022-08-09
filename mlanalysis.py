@@ -1,6 +1,7 @@
 import csv
 import sys
 from typing import DefaultDict
+from numpy import number
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
@@ -21,9 +22,12 @@ competitors = {}
 points_for_submissions_by_round = {}
 subissions_by_users = {}
 popularity_of_songs = {}
+valence_of_songs = {}
 round_winners = {}
 round_losers = {}
 avg_popularity_of_songs = 0
+avg_popularity_of_songs_by_round = {}
+number_of_songs_by_round = {}
 total_songs = 0
 
 league_name = 'mazala-q4'
@@ -37,24 +41,36 @@ with open(f"data/{league_name}/rounds.csv", newline='') as csvfile:
     for row in reader:
         rounds.append(row['ID'])
         points_for_submissions_by_round[row['ID']] = DefaultDict(int)
+        number_of_songs_by_round[row['ID']] = 0
+        avg_popularity_of_songs_by_round[row['ID']] = 0
 
 with open(f"data/{league_name}/competitors.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'total_votes_assigned': 0, 'votes_for_popular_score': 0, 'popularity_score': 0, 'efficiency_score':0, 'chatty_score': 0, 'sheep_score': 0, 'picky_score': 0, 'taste_maker': 0, 'taste_faker': 0}
+        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'happy_score': 0, 'adjusted_score': 0, 'total_votes_assigned': 0, 'votes_for_popular_score': 0, 'popularity_score': 0, 'efficiency_score':0, 'chatty_score': 0, 'sheep_score': 0, 'picky_score': 0, 'taste_maker': 0, 'taste_faker': 0}
         for round_id in rounds:
             competitors[row['ID']]['votes'][round_id] = {}
 
 with open(f"data/{league_name}/submissions.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
+        total_songs += 1
+        number_of_songs_by_round[row['Round ID']] += 1
+
         competitors[row['Submitter ID']]['submissions'][row['Round ID']] = row['Spotify URI']
         popularity_of_songs[row['Spotify URI']] = sp.track(row['Spotify URI'])['popularity']
+        valence_of_songs[row['Spotify URI']] = int(100*sp.audio_features(row['Spotify URI'])[0]['valence'])
         competitors[row['Submitter ID']]['popularity_score'] += popularity_of_songs[row['Spotify URI']]
-        total_songs += 1
+        competitors[row['Submitter ID']]['happy_score'] += valence_of_songs[row['Spotify URI']]
         avg_popularity_of_songs += popularity_of_songs[row['Spotify URI']]
+        avg_popularity_of_songs_by_round[row['Round ID']] += popularity_of_songs[row['Spotify URI']]
+
+#song_features = sp.audio_features(popularity_of_songs.keys)
 
 avg_popularity_of_songs = int(avg_popularity_of_songs / total_songs)
+for round in rounds:
+    avg_popularity_of_songs_by_round[round] = int(avg_popularity_of_songs_by_round[round] / number_of_songs_by_round[round])
+    print(f"average popularity score of all songs submitted in {round}: {avg_popularity_of_songs_by_round[round]}")
 
 with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
@@ -72,6 +88,7 @@ with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
 # calculate average popularity of submissions and votes for songs
 for competitor in competitors.values():
     competitor['popularity_score'] = competitor['popularity_score'] / len(competitor['submissions']) # average pop score by number of songs submitted
+    competitor['happy_score'] = competitor['happy_score'] / len(competitor['submissions']) # average pop score by number of songs submitted
     competitor['votes_for_popular_score'] = competitor['votes_for_popular_score'] / competitor['total_votes_assigned'] # average votes for popular by total votes assigned
 
     # now loop through the rounds this user submitted for, grab out the points they got for that submission, and multiply by that song's popularity to get 'efficency' score
@@ -80,6 +97,11 @@ for competitor in competitors.values():
         points_awarded_to_competitor += points_for_submissions_by_round[round][competitor['submissions'][round]]
         competitor['efficiency_score'] += points_for_submissions_by_round[round][competitor['submissions'][round]] * popularity_of_songs[competitor['submissions'][round]]
     competitor['efficiency_score'] = competitor['efficiency_score'] / points_awarded_to_competitor
+
+    # now loop through the rounds this user submitted for, grab the points they got, and modify the point value by how far they were from the average popularity
+    for round in competitor['submissions']:
+        competitor['adjusted_score'] += points_for_submissions_by_round[round][competitor['submissions'][round]] + ((avg_popularity_of_songs_by_round[round] - popularity_of_songs[competitor['submissions'][round]])/3)
+
 
 # use the number of points assigned to each submission for each round to determine the winner and loser (ignore ties)
 for round in rounds:
@@ -100,7 +122,13 @@ print("\nefficiency score multiplies the number of points each of your songs got
 for competitor in competitors.values():
     print(f"{competitor['name']}'s efficency score: {int(competitor['efficiency_score'])}")
 
-quit()
+print("\aadjusted score is actual score plus the difference in the average popularity of a song per round and your song's popularity that round, divided by 3 (basically a bonus for submitting obscure songs and a penalty for submitting popular songs)")
+for competitor in competitors.values():
+    print(f"{competitor['name']}'s adjusted score: {int(competitor['adjusted_score'])}")
+
+print("\ahappy score (0-100) is how happy this player is, based on the songs they submitted (the higher, the happier)")
+for competitor in competitors.values():
+    print(f"{competitor['name']}'s happy score: {int(competitor['happy_score'])}")
 
 print("\nchatty score is the number of times you left a comment on a song you awarded zero points to")
 for competitor in competitors.values():
@@ -143,6 +171,10 @@ print("\nTaste Faker Scores (who most often voted for the worst song):")
 for competitor in competitors.values():
     print(f"{competitor['name']}'s taste faker: {competitor['taste_faker']}")
 
+# delete these people to not mess up biggest fan and nemesis stats
+delete_list = ['8ef3d2c35b114941969315ba76a51745', 'b1d3b6bb237f476daab860bce327dbd6', 'b8d063fd08294c4e990c23ad828fc413']
+for item in delete_list:
+    del competitors[item]
 
 # find 'how many points did i assign to each other player and in how many rounds'
 for competitor in competitors.values():
@@ -165,8 +197,6 @@ for competitor in competitors.values():
                                 who_they_voted_for[other_player['name']][1] += 1
     sorted_voting_history = sorted(who_they_voted_for.items(), key=lambda item: item[1])
     #print(f"{competitor['name']}'s voting history ({total_points_assigned}): {sorted_voting_history}")
-
-#quit()
 
 # find each competitor's "biggest fan" and "nemesis"
 print("\nbiggest fan and nemesis")
