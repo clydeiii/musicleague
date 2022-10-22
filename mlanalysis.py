@@ -91,7 +91,10 @@ delete_list = ['8ef3d2c35b114941969315ba76a51745',
                'b8d063fd08294c4e990c23ad828fc413', 
                '20d3fed7908d4a998ec0cdedcee223a8',
                '8810a6d0056e402a92e777f8a26004a2',
-               'cdde7d539f9e427b906619364c00b037']
+               'cdde7d539f9e427b906619364c00b037',
+               'cb2efab300e444e590420c27c6131562',
+               '7047295b6ccc457e95faed1629628fde',
+               'a344c9073dab47aeb95e39398bcb04de']
 for item in delete_list:
     if item in competitors:
         del competitors[item]
@@ -123,11 +126,11 @@ print(f"average popularity score of all songs submitted this league: {avg_popula
 
 print("\npopularity score is the average popularity score of all songs you submitted during the league (0-100, with 100 being most popular)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s popularity score: {int(competitor['popularity_score'])}")
+    print(f"{competitor['name']},{int(competitor['popularity_score'])}")
 
 print("\nvotes for popular score multiplies the number of votes you assigned each song by that song's popularity (0-100)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s votes for popular score: {int(competitor['votes_for_popular_score'])}")
+    print(f"{competitor['name']}',{int(competitor['votes_for_popular_score'])}")
 
 print("\nefficiency score multiplies the number of points each of your songs got by each of those songs' popularity then divides by total points awarded")
 for competitor in competitors.values():
@@ -135,11 +138,11 @@ for competitor in competitors.values():
 
 print("\aadjusted score is actual score plus the difference in the average popularity of a song per round and your song's popularity that round, divided by 3 (basically a bonus for submitting obscure songs and a penalty for submitting popular songs)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s adjusted score: {int(competitor['adjusted_score'])}")
+    print(f"{competitor['name']},{int(competitor['adjusted_score'])}")
 
 print("\ahappy score (0-100) is how happy this player is, based on the songs they submitted (the higher, the happier)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s happy score: {int(competitor['happy_score'])}")
+    print(f"{competitor['name']},{int(competitor['happy_score'])}")
 
 print("\nchatty score is the number of times you left a comment on a song you awarded zero points to")
 for competitor in competitors.values():
@@ -147,7 +150,7 @@ for competitor in competitors.values():
 
 print("\npicky score is the number of times you awarded a song any number of points (the lower the score, the pickier)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s picky score: {competitor['picky_score']}")
+    print(f"{competitor['name']},{competitor['picky_score']}")
 
 # get taste maker and taste faker (who most often voted for the "best" and "worst" songs)
 for competitor in competitors.values():
@@ -168,19 +171,19 @@ for competitor in competitors.values():
 
 print("\nsheep score is how often you voted with the herd")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s sheep score: {competitor['sheep_score']}")
+    print(f"{competitor['name']},{competitor['sheep_score']}")
 
 print('\nmost influential = (1/picky) x sheep x tastemaker')
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s influence score score: {1/competitor['picky_score'] * competitor['sheep_score'] * competitor['taste_maker']}")
+    print(f"{competitor['name']},{1/competitor['picky_score'] * competitor['sheep_score'] * competitor['taste_maker']}")
 
 
 print("\nTaste Maker Scores (who most often voted for the best song):")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s TasteMaker score: {competitor['taste_maker']}")
+    print(f"{competitor['name']},{competitor['taste_maker']}")
 print("\nTaste Faker Scores (who most often voted for the worst song):")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s taste faker: {competitor['taste_faker']}")
+    print(f"{competitor['name']},{competitor['taste_faker']}")
 
 # find 'how many points did i assign to each other player and in how many rounds'
 for competitor in competitors.values():
@@ -227,6 +230,6 @@ for competitor in competitors.values():
                                 biggest_fans[possible_fan['name']][1] += 1 # tally how rounds they voted for this person (regardless of points assigned)
     sorted_voting_history = sorted(biggest_fans.items(), key=lambda item: item[1])
     #print(f"{competitor['name']}'s voted for history ({score}): {sorted_voting_history}")
-    print(f"{competitor['name']}'s biggest fan is {sorted_voting_history[len(sorted_voting_history)-1]} and their nemesis is {sorted_voting_history[0]}")
+    print(f"{competitor['name']},{sorted_voting_history[len(sorted_voting_history)-1]},{sorted_voting_history[0]}")
 
 
