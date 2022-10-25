@@ -5,17 +5,9 @@ from numpy import number
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-#tids = ["spotify:track:0fajMX89sy4Z2fGq2GxxHq", "spotify:track:0paMRnR0hqdz8nmInYZrbM"]
-
 # init the spotipy client auth and api
 client_credentials_manager = SpotifyClientCredentials()
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
-
-#results = sp.tracks(tids)
-#for track in results['tracks']:
-#    print(track['name'] + ' - ' + track['artists'][0]['name'] + ' - ' + str(track['popularity']))
-    #print(track)
-#exit()
 
 rounds = []
 competitors = {}
@@ -30,7 +22,7 @@ avg_popularity_of_songs_by_round = {}
 number_of_songs_by_round = {}
 total_songs = 0
 
-league_name = 'superfam-s2'
+league_name = 'mazala-q5'
 if len(sys.argv) > 1:
     league_name = sys.argv[1]
 
@@ -64,8 +56,6 @@ with open(f"data/{league_name}/submissions.csv", newline='') as csvfile:
         competitors[row['Submitter ID']]['happy_score'] += valence_of_songs[row['Spotify URI']]
         avg_popularity_of_songs += popularity_of_songs[row['Spotify URI']]
         avg_popularity_of_songs_by_round[row['Round ID']] += popularity_of_songs[row['Spotify URI']]
-
-#song_features = sp.audio_features(popularity_of_songs.keys)
 
 avg_popularity_of_songs = int(avg_popularity_of_songs / total_songs)
 for round in rounds:
@@ -122,33 +112,33 @@ for round in rounds:
     round_winners[round] = max(points_for_submissions_by_round[round], key=points_for_submissions_by_round[round].get)
     round_losers[round] = min(points_for_submissions_by_round[round], key=points_for_submissions_by_round[round].get)
 
-print(f"average popularity score of all songs submitted this league: {avg_popularity_of_songs}")
+print(f"\naverage popularity score of all songs submitted this league: {avg_popularity_of_songs}")
 
-print("\npopularity score is the average popularity score of all songs you submitted during the league (0-100, with 100 being most popular)")
+print("\nsubmits popular score (the average popularity score of all songs you submitted during the league (0-100, with 100 being most popular))")
 for competitor in competitors.values():
     print(f"{competitor['name']},{int(competitor['popularity_score'])}")
 
-print("\nvotes for popular score multiplies the number of votes you assigned each song by that song's popularity (0-100)")
+print("\nvotes for popular score (the number of votes you assigned each song multiplled by that song's popularity, divided by the total number of votes assigned)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}',{int(competitor['votes_for_popular_score'])}")
+    print(f"{competitor['name']},{int(competitor['votes_for_popular_score'])}")
 
-print("\nefficiency score multiplies the number of points each of your songs got by each of those songs' popularity then divides by total points awarded")
+print("\nefficiency score (the number of points each of your songs got multiplied by each of those songs' popularity then divideded by total points awarded)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s efficency score: {int(competitor['efficiency_score'])}")
+    print(f"{competitor['name']},{int(competitor['efficiency_score'])}")
 
-print("\aadjusted score is actual score plus the difference in the average popularity of a song per round and your song's popularity that round, divided by 3 (basically a bonus for submitting obscure songs and a penalty for submitting popular songs)")
+print("\nadjusted score (actual score plus the difference in the average popularity of a song per round and your song's popularity that round, divided by 3 (basically a bonus for submitting obscure songs and a penalty for submitting popular songs))")
 for competitor in competitors.values():
     print(f"{competitor['name']},{int(competitor['adjusted_score'])}")
 
-print("\ahappy score (0-100) is how happy this player is, based on the songs they submitted (the higher, the happier)")
+print("\nhappy score (how happy this player is, based on the songs they submitted (the higher, the happier))")
 for competitor in competitors.values():
     print(f"{competitor['name']},{int(competitor['happy_score'])}")
 
-print("\nchatty score is the number of times you left a comment on a song you awarded zero points to")
+print("\nchatty score (the number of times you left a comment on a song you awarded zero points to)")
 for competitor in competitors.values():
-    print(f"{competitor['name']}'s chatty score: {competitor['chatty_score']}")
+    print(f"{competitor['name']},{competitor['chatty_score']}")
 
-print("\npicky score is the number of times you awarded a song any number of points (the lower the score, the pickier)")
+print("\npicky score (the number of times you awarded a song any number of points (the lower the score, the pickier))")
 for competitor in competitors.values():
     print(f"{competitor['name']},{competitor['picky_score']}")
 
@@ -169,19 +159,19 @@ for competitor in competitors.values():
                 # example: a song is awarded 20 points this round and this user gave it 5, therefore it adds 100 to their sheep score
                 competitor['sheep_score'] += points_for_submissions_by_round[round][submission] * competitor['votes'][round][submission] 
 
-print("\nsheep score is how often you voted with the herd")
+print("\nsheep score (how often you voted with the herd, the higher the more sheepier)")
 for competitor in competitors.values():
     print(f"{competitor['name']},{competitor['sheep_score']}")
 
-print('\nmost influential = (1/picky) x sheep x tastemaker')
+print('\ninfluencer score ((1/picky) x sheep x tastemaker)')
 for competitor in competitors.values():
     print(f"{competitor['name']},{1/competitor['picky_score'] * competitor['sheep_score'] * competitor['taste_maker']}")
 
 
-print("\nTaste Maker Scores (who most often voted for the best song):")
+print("\ntastemaker score (how often you voted for the best song)")
 for competitor in competitors.values():
     print(f"{competitor['name']},{competitor['taste_maker']}")
-print("\nTaste Faker Scores (who most often voted for the worst song):")
+print("\ntastefaker score (how often you voted for the worst song)")
 for competitor in competitors.values():
     print(f"{competitor['name']},{competitor['taste_faker']}")
 

@@ -1,3 +1,4 @@
 output.txt
 data/.DS_Store
-spotifpy.oauth.txt
+spotifpy_oauth.txt
+.gitignore
