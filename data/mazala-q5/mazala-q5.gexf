@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-11-02">
+    <creator>NetworkX 2.8.8</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <nodes>
+      <node id="mmazala" label="mmazala" />
+      <node id="MJ" label="MJ" />
+      <node id="Shandy Johnston" label="Shandy Johnston" />
+      <node id="Carl Landon Clark" label="Carl Landon Clark" />
+      <node id="Michael Kraemer" label="Michael Kraemer" />
+      <node id="Delton Brack" label="Delton Brack" />
+      <node id="Don Eskridge" label="Don Eskridge" />
+      <node id="Patrick Rose" label="Patrick Rose" />
+      <node id="Cal" label="Cal" />
+      <node id="Clyde Wright" label="Clyde Wright" />
+      <node id="Majai_of_dreams" label="Majai_of_dreams" />
+      <node id="Pyre231" label="Pyre231" />
+    </nodes>
+    <edges>
+      <edge source="mmazala" target="MJ" id="0" weight="8" />
+      <edge source="mmazala" target="Shandy Johnston" id="1" weight="6" />
+      <edge source="mmazala" target="Carl Landon Clark" id="2" weight="7" />
+      <edge source="mmazala" target="Michael Kraemer" id="3" weight="3" />
+      <edge source="mmazala" target="Delton Brack" id="4" weight="2" />
+      <edge source="mmazala" target="Don Eskridge" id="5" weight="4" />
+      <edge source="mmazala" target="Patrick Rose" id="6" weight="6" />
+      <edge source="mmazala" target="Cal" id="7" weight="3" />
+      <edge source="mmazala" target="Clyde Wright" id="8" weight="1" />
+      <edge source="mmazala" target="Majai_of_dreams" id="9" weight="8" />
+      <edge source="mmazala" target="Pyre231" id="10" weight="2" />
+      <edge source="MJ" target="mmazala" id="11" weight="6" />
+      <edge source="MJ" target="Shandy Johnston" id="12" weight="5" />
+      <edge source="MJ" target="Carl Landon Clark" id="13" weight="6" />
+      <edge source="MJ" target="Michael Kraemer" id="14" weight="5" />
+      <edge source="MJ" target="Delton Brack" id="15" weight="5" />
+      <edge source="MJ" target="Don Eskridge" id="16" weight="4" />
+      <edge source="MJ" target="Patrick Rose" id="17" weight="3" />
+      <edge source="MJ" target="Cal" id="18" weight="5" />
+      <edge source="MJ" target="Clyde Wright" id="19" weight="4" />
+      <edge source="MJ" target="Majai_of_dreams" id="20" weight="5" />
+      <edge source="MJ" target="Pyre231" id="21" weight="2" />
+      <edge source="Shandy Johnston" target="mmazala" id="22" weight="13" />
+      <edge source="Shandy Johnston" target="MJ" id="23" weight="4" />
+      <edge source="Shandy Johnston" target="Carl Landon Clark" id="24" weight="1" />
+      <edge source="Shandy Johnston" target="Michael Kraemer" id="25" weight="5" />
+      <edge source="Shandy Johnston" target="Delton Brack" id="26" weight="0" />
+      <edge source="Shandy Johnston" target="Don Eskridge" id="27" weight="7" />
+      <edge source="Shandy Johnston" target="Patrick Rose" id="28" weight="2" />
+      <edge source="Shandy Johnston" target="Cal" id="29" weight="4" />
+      <edge source="Shandy Johnston" target="Clyde Wright" id="30" weight="5" />
+      <edge source="Shandy Johnston" target="Majai_of_dreams" id="31" weight="3" />
+      <edge source="Shandy Johnston" target="Pyre231" id="32" weight="6" />
+      <edge source="Carl Landon Clark" target="mmazala" id="33" weight="3" />
+      <edge source="Carl Landon Clark" target="MJ" id="34" weight="8" />
+      <edge source="Carl Landon Clark" target="Shandy Johnston" id="35" weight="4" />
+      <edge source="Carl Landon Clark" target="Michael Kraemer" id="36" weight="4" />
+      <edge source="Carl Landon Clark" target="Delton Brack" id="37" weight="1" />
+      <edge source="Carl Landon Clark" target="Don Eskridge" id="38" weight="1" />
+      <edge source="Carl Landon Clark" target="Patrick Rose" id="39" weight="3" />
+      <edge source="Carl Landon Clark" target="Cal" id="40" weight="4" />
+      <edge source="Carl Landon Clark" target="Clyde Wright" id="41" weight="7" />
+      <edge source="Carl Landon Clark" target="Majai_of_dreams" id="42" weight="5" />
+      <edge source="Carl Landon Clark" target="Pyre231" id="43" weight="10" />
+      <edge source="Michael Kraemer" target="mmazala" id="44" weight="7" />
+      <edge source="Michael Kraemer" target="MJ" id="45" weight="0" />
+      <edge source="Michael Kraemer" target="Shandy Johnston" id="46" weight="4" />
+      <edge source="Michael Kraemer" target="Carl Landon Clark" id="47" weight="6" />
+      <edge source="Michael Kraemer" target="Delton Brack" id="48" weight="1" />
+      <edge source="Michael Kraemer" target="Don Eskridge" id="49" weight="3" />
+      <edge source="Michael Kraemer" target="Patrick Rose" id="50" weight="4" />
+      <edge source="Michael Kraemer" target="Cal" id="51" weight="7" />
+      <edge source="Michael Kraemer" target="Clyde Wright" id="52" weight="6" />
+      <edge source="Michael Kraemer" target="Majai_of_dreams" id="53" weight="8" />
+      <edge source="Michael Kraemer" target="Pyre231" id="54" weight="4" />
+      <edge source="Delton Brack" target="mmazala" id="55" weight="0" />
+      <edge source="Delton Brack" target="MJ" id="56" weight="6" />
+      <edge source="Delton Brack" target="Shandy Johnston" id="57" weight="1" />
+      <edge source="Delton Brack" target="Carl Landon Clark" id="58" weight="5" />
+      <edge source="Delton Brack" target="Michael Kraemer" id="59" weight="8" />
+      <edge source="Delton Brack" target="Don Eskridge" id="60" weight="2" />
+      <edge source="Delton Brack" target="Patrick Rose" id="61" weight="6" />
+      <edge source="Delton Brack" target="Cal" id="62" weight="7" />
+      <edge source="Delton Brack" target="Clyde Wright" id="63" weight="8" />
+      <edge source="Delton Brack" target="Majai_of_dreams" id="64" weight="3" />
+      <edge source="Delton Brack" target="Pyre231" id="65" weight="4" />
+      <edge source="Don Eskridge" target="mmazala" id="66" weight="2" />
+      <edge source="Don Eskridge" target="MJ" id="67" weight="2" />
+      <edge source="Don Eskridge" target="Shandy Johnston" id="68" weight="0" />
+      <edge source="Don Eskridge" target="Carl Landon Clark" id="69" weight="5" />
+      <edge source="Don Eskridge" target="Michael Kraemer" id="70" weight="2" />
+      <edge source="Don Eskridge" target="Delton Brack" id="71" weight="5" />
+      <edge source="Don Eskridge" target="Patrick Rose" id="72" weight="3" />
+      <edge source="Don Eskridge" target="Cal" id="73" weight="0" />
+      <edge source="Don Eskridge" target="Clyde Wright" id="74" weight="6" />
+      <edge source="Don Eskridge" target="Majai_of_dreams" id="75" weight="2" />
+      <edge source="Don Eskridge" target="Pyre231" id="76" weight="3" />
+      <edge source="Patrick Rose" target="mmazala" id="77" weight="4" />
+      <edge source="Patrick Rose" target="MJ" id="78" weight="2" />
+      <edge source="Patrick Rose" target="Shandy Johnston" id="79" weight="5" />
+      <edge source="Patrick Rose" target="Carl Landon Clark" id="80" weight="6" />
+      <edge source="Patrick Rose" target="Michael Kraemer" id="81" weight="5" />
+      <edge source="Patrick Rose" target="Delton Brack" id="82" weight="6" />
+      <edge source="Patrick Rose" target="Don Eskridge" id="83" weight="2" />
+      <edge source="Patrick Rose" target="Cal" id="84" weight="10" />
+      <edge source="Patrick Rose" target="Clyde Wright" id="85" weight="5" />
+      <edge source="Patrick Rose" target="Majai_of_dreams" id="86" weight="3" />
+      <edge source="Patrick Rose" target="Pyre231" id="87" weight="2" />
+      <edge source="Cal" target="mmazala" id="88" weight="1" />
+      <edge source="Cal" target="MJ" id="89" weight="8" />
+      <edge source="Cal" target="Shandy Johnston" id="90" weight="3" />
+      <edge source="Cal" target="Carl Landon Clark" id="91" weight="6" />
+      <edge source="Cal" target="Michael Kraemer" id="92" weight="1" />
+      <edge source="Cal" target="Delton Brack" id="93" weight="5" />
+      <edge source="Cal" target="Don Eskridge" id="94" weight="0" />
+      <edge source="Cal" target="Patrick Rose" id="95" weight="4" />
+      <edge source="Cal" target="Clyde Wright" id="96" weight="13" />
+      <edge source="Cal" target="Majai_of_dreams" id="97" weight="4" />
+      <edge source="Cal" target="Pyre231" id="98" weight="5" />
+      <edge source="Clyde Wright" target="mmazala" id="99" weight="0" />
+      <edge source="Clyde Wright" target="MJ" id="100" weight="2" />
+      <edge source="Clyde Wright" target="Shandy Johnston" id="101" weight="3" />
+      <edge source="Clyde Wright" target="Carl Landon Clark" id="102" weight="12" />
+      <edge source="Clyde Wright" target="Michael Kraemer" id="103" weight="6" />
+      <edge source="Clyde Wright" target="Delton Brack" id="104" weight="4" />
+      <edge source="Clyde Wright" target="Don Eskridge" id="105" weight="0" />
+      <edge source="Clyde Wright" target="Patrick Rose" id="106" weight="9" />
+      <edge source="Clyde Wright" target="Cal" id="107" weight="3" />
+      <edge source="Clyde Wright" target="Majai_of_dreams" id="108" weight="4" />
+      <edge source="Clyde Wright" target="Pyre231" id="109" weight="7" />
+      <edge source="Majai_of_dreams" target="mmazala" id="110" weight="10" />
+      <edge source="Majai_of_dreams" target="MJ" id="111" weight="9" />
+      <edge source="Majai_of_dreams" target="Shandy Johnston" id="112" weight="8" />
+      <edge source="Majai_of_dreams" target="Carl Landon Clark" id="113" weight="3" />
+      <edge source="Majai_of_dreams" target="Michael Kraemer" id="114" weight="0" />
+      <edge source="Majai_of_dreams" target="Delton Brack" id="115" weight="2" />
+      <edge source="Majai_of_dreams" target="Don Eskridge" id="116" weight="7" />
+      <edge source="Majai_of_dreams" target="Patrick Rose" id="117" weight="1" />
+      <edge source="Majai_of_dreams" target="Cal" id="118" weight="4" />
+      <edge source="Majai_of_dreams" target="Clyde Wright" id="119" weight="0" />
+      <edge source="Majai_of_dreams" target="Pyre231" id="120" weight="6" />
+      <edge source="Pyre231" target="mmazala" id="121" weight="6" />
+      <edge source="Pyre231" target="MJ" id="122" weight="6" />
+      <edge source="Pyre231" target="Shandy Johnston" id="123" weight="2" />
+      <edge source="Pyre231" target="Carl Landon Clark" id="124" weight="9" />
+      <edge source="Pyre231" target="Michael Kraemer" id="125" weight="3" />
+      <edge source="Pyre231" target="Delton Brack" id="126" weight="3" />
+      <edge source="Pyre231" target="Don Eskridge" id="127" weight="6" />
+      <edge source="Pyre231" target="Patrick Rose" id="128" weight="5" />
+      <edge source="Pyre231" target="Cal" id="129" weight="3" />
+      <edge source="Pyre231" target="Clyde Wright" id="130" weight="4" />
+      <edge source="Pyre231" target="Majai_of_dreams" id="131" weight="3" />
+    </edges>
+  </graph>
+</gexf>
