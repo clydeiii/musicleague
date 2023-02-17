@@ -22,7 +22,7 @@ avg_popularity_of_songs_by_round = {}
 number_of_songs_by_round = {}
 total_songs = 0
 
-league_name = 'mazala-q5'
+league_name = 'no-gorbage'
 if len(sys.argv) > 1:
     league_name = sys.argv[1]
 
@@ -51,7 +51,11 @@ with open(f"data/{league_name}/submissions.csv", newline='') as csvfile:
 
         competitors[row['Submitter ID']]['submissions'][row['Round ID']] = row['Spotify URI']
         popularity_of_songs[row['Spotify URI']] = sp.track(row['Spotify URI'])['popularity']
-        valence_of_songs[row['Spotify URI']] = int(100*sp.audio_features(row['Spotify URI'])[0]['valence'])
+        features = sp.audio_features(row['Spotify URI'])[0]
+        if features != None:
+            valence_of_songs[row['Spotify URI']] = int(100*features['valence'])
+        else: # for some reason spotify doesn't have valence for this song so just assume it's middling
+            valence_of_songs[row['Spotify URI']] = 50
         competitors[row['Submitter ID']]['popularity_score'] += popularity_of_songs[row['Spotify URI']]
         competitors[row['Submitter ID']]['happy_score'] += valence_of_songs[row['Spotify URI']]
         avg_popularity_of_songs += popularity_of_songs[row['Spotify URI']]
@@ -84,7 +88,12 @@ delete_list = ['8ef3d2c35b114941969315ba76a51745',
                'cdde7d539f9e427b906619364c00b037',
                'cb2efab300e444e590420c27c6131562',
                '7047295b6ccc457e95faed1629628fde',
-               'a344c9073dab47aeb95e39398bcb04de']
+               'a344c9073dab47aeb95e39398bcb04de',
+               '42d9f1ea11924ac080011b6a3906a78e',
+               '43bc65daa20a4c7493432d846d37be15',
+               'f08c3c60795c485dbff30b1b4d2ab227',
+               '0fce2c21ddec4bad9da72fe8c8c43a22',
+               '0fd41211ecdf4b69839eb5c90cf05602']
 for item in delete_list:
     if item in competitors:
         del competitors[item]
