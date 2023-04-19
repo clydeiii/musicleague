@@ -22,7 +22,7 @@ avg_popularity_of_songs_by_round = {}
 number_of_songs_by_round = {}
 total_songs = 0
 
-league_name = 'no-gorbage'
+league_name = 'ductnote'
 if len(sys.argv) > 1:
     league_name = sys.argv[1]
 
@@ -93,7 +93,8 @@ delete_list = ['8ef3d2c35b114941969315ba76a51745',
                '43bc65daa20a4c7493432d846d37be15',
                'f08c3c60795c485dbff30b1b4d2ab227',
                '0fce2c21ddec4bad9da72fe8c8c43a22',
-               '0fd41211ecdf4b69839eb5c90cf05602']
+               '0fd41211ecdf4b69839eb5c90cf05602',
+               'b980e47a32c74ddb9f30e77e1959157a']
 for item in delete_list:
     if item in competitors:
         del competitors[item]
