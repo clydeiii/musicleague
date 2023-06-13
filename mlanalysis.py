@@ -22,7 +22,7 @@ avg_popularity_of_songs_by_round = {}
 number_of_songs_by_round = {}
 total_songs = 0
 
-league_name = 'ductnote'
+league_name = 'superfam-s3'
 if len(sys.argv) > 1:
     league_name = sys.argv[1]
 
@@ -80,21 +80,7 @@ with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
         points_for_submissions_by_round[row['Round ID']][row['Spotify URI']] += int(row['Points Assigned'])
 
 # delete these people to not mess up biggest fan and nemesis stats
-delete_list = ['8ef3d2c35b114941969315ba76a51745', 
-               'b1d3b6bb237f476daab860bce327dbd6', 
-               'b8d063fd08294c4e990c23ad828fc413', 
-               '20d3fed7908d4a998ec0cdedcee223a8',
-               '8810a6d0056e402a92e777f8a26004a2',
-               'cdde7d539f9e427b906619364c00b037',
-               'cb2efab300e444e590420c27c6131562',
-               '7047295b6ccc457e95faed1629628fde',
-               'a344c9073dab47aeb95e39398bcb04de',
-               '42d9f1ea11924ac080011b6a3906a78e',
-               '43bc65daa20a4c7493432d846d37be15',
-               'f08c3c60795c485dbff30b1b4d2ab227',
-               '0fce2c21ddec4bad9da72fe8c8c43a22',
-               '0fd41211ecdf4b69839eb5c90cf05602',
-               'b980e47a32c74ddb9f30e77e1959157a']
+delete_list = ['cc4efe883de54a888a6ebe56d37b51a2']
 for item in delete_list:
     if item in competitors:
         del competitors[item]
