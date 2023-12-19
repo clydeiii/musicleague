@@ -1,5 +1,6 @@
 output.txt
 data/.DS_Store
 spotifpy_oauth.txt
+spotify_credentials.txt
 .gitignore
 .cache

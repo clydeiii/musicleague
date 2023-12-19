@@ -39,7 +39,22 @@ with open(f"data/{league_name}/rounds.csv", newline='') as csvfile:
 with open(f"data/{league_name}/competitors.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        competitors[row['ID']] = {'name': row['Name'], 'submissions': {}, 'votes' : {}, 'happy_score': 0, 'adjusted_score': 0, 'total_votes_assigned': 0, 'votes_for_popular_score': 0, 'popularity_score': 0, 'efficiency_score':0, 'chatty_score': 0, 'sheep_score': 0, 'picky_score': 0, 'taste_maker': 0, 'taste_faker': 0}
+        competitors[row['ID']] = {'name': row['Name'], 
+                                  'submissions': {}, 
+                                  'votes' : {},
+                                  'score': 0, 
+                                  'happy_score': 0, 
+                                  'adjusted_score': 0,
+                                  'super_adjusted_score': 0,
+                                  'total_votes_assigned': 0, 
+                                  'votes_for_popular_score': 0, 
+                                  'popularity_score': 0, 
+                                  'efficiency_score':0, 
+                                  'chatty_score': 0, 
+                                  'sheep_score': 0, 
+                                  'picky_score': 0, 
+                                  'taste_maker': 0, 
+                                  'taste_faker': 0}
         for round_id in rounds:
             competitors[row['ID']]['votes'][round_id] = {}
 
@@ -80,10 +95,10 @@ with open(f"data/{league_name}/votes.csv", newline='') as csvfile:
         points_for_submissions_by_round[row['Round ID']][row['Spotify URI']] += int(row['Points Assigned'])
 
 # delete these people to not mess up biggest fan and nemesis stats
-delete_list = ['cc4efe883de54a888a6ebe56d37b51a2']
-for item in delete_list:
-    if item in competitors:
-        del competitors[item]
+#delete_list = ['cc4efe883de54a888a6ebe56d37b51a2']
+#for item in delete_list:
+#    if item in competitors:
+#        del competitors[item]
 
 # calculate average popularity of submissions and votes for songs
 for competitor in competitors.values():
@@ -217,5 +232,10 @@ for competitor in competitors.values():
     sorted_voting_history = sorted(biggest_fans.items(), key=lambda item: item[1])
     #print(f"{competitor['name']}'s voted for history ({score}): {sorted_voting_history}")
     print(f"{competitor['name']},{sorted_voting_history[len(sorted_voting_history)-1]},{sorted_voting_history[0]}")
+    competitor['super_adjusted_score'] = score - sorted_voting_history[len(sorted_voting_history)-1][1][0]
+    competitor['score'] = score
 
+print("\nsuper adjusted score (score - biggest fan)")
+for competitor in competitors.values():
+    print(f"{competitor['name']},{competitor['super_adjusted_score']} (down from {competitor['score']})")
 
